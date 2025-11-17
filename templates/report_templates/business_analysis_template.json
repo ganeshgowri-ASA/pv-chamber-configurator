@@ -1,0 +1,61 @@
+{
+  "name": "Business Analysis Template",
+  "report_type": "business_analysis",
+  "version": "1.0",
+  "description": "TCO and ROI business analysis report",
+  "branding": {
+    "company_name": "Zenitek Solutions",
+    "logo_path": "assets/logo.png",
+    "primary_color": "#2c5aa0",
+    "secondary_color": "#1f4788"
+  },
+  "layout": {
+    "page_size": "A4",
+    "orientation": "portrait",
+    "margins": {
+      "top": 20,
+      "bottom": 20,
+      "left": 15,
+      "right": 15
+    }
+  },
+  "typography": {
+    "font_family": "Helvetica",
+    "font_sizes": {
+      "title": 24,
+      "header": 16,
+      "subheader": 14,
+      "body": 11
+    }
+  },
+  "sections": [
+    {
+      "name": "TCO Breakdown",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "name": "ROI Metrics",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "name": "Competitive Comparison",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "name": "Sensitivity Analysis",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "name": "Investment Justification",
+      "enabled": true,
+      "order": 5
+    }
+  ],
+  "watermark": {
+    "enabled": false
+  }
+}

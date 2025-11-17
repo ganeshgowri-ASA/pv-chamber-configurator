@@ -1,0 +1,61 @@
+{
+  "name": "Compliance & Calibration Template",
+  "report_type": "compliance",
+  "version": "1.0",
+  "description": "IEC compliance and calibration certification report",
+  "branding": {
+    "company_name": "Zenitek Solutions",
+    "logo_path": "assets/logo.png",
+    "primary_color": "#2c5aa0",
+    "secondary_color": "#1f4788"
+  },
+  "layout": {
+    "page_size": "A4",
+    "orientation": "portrait",
+    "margins": {
+      "top": 20,
+      "bottom": 20,
+      "left": 15,
+      "right": 15
+    }
+  },
+  "typography": {
+    "font_family": "Helvetica",
+    "font_sizes": {
+      "title": 24,
+      "header": 16,
+      "subheader": 14,
+      "body": 11
+    }
+  },
+  "sections": [
+    {
+      "name": "IEC Compliance",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "name": "Calibration Certificates",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "name": "Uncertainty Budgets",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "name": "Traceability Chain",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "name": "Next Calibration Due",
+      "enabled": true,
+      "order": 5
+    }
+  ],
+  "watermark": {
+    "enabled": false
+  }
+}
