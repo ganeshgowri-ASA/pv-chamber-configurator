@@ -1,0 +1,90 @@
+{
+  "name": "Technical Specification Template",
+  "report_type": "technical_specification",
+  "version": "1.0",
+  "description": "Comprehensive technical specification report for PV test chambers",
+  "branding": {
+    "company_name": "Zenitek Solutions",
+    "logo_path": "assets/logo.png",
+    "primary_color": "#2c5aa0",
+    "secondary_color": "#1f4788",
+    "accent_color": "#3498db"
+  },
+  "layout": {
+    "page_size": "A4",
+    "orientation": "portrait",
+    "margins": {
+      "top": 20,
+      "bottom": 20,
+      "left": 15,
+      "right": 15
+    },
+    "header_height": 30,
+    "footer_height": 20
+  },
+  "typography": {
+    "font_family": "Helvetica",
+    "font_sizes": {
+      "title": 24,
+      "header": 16,
+      "subheader": 14,
+      "body": 11,
+      "caption": 9
+    }
+  },
+  "sections": [
+    {
+      "name": "Executive Summary",
+      "enabled": true,
+      "order": 1,
+      "include_toc": true
+    },
+    {
+      "name": "Chamber Specifications",
+      "enabled": true,
+      "order": 2,
+      "include_toc": true
+    },
+    {
+      "name": "Performance Characteristics",
+      "enabled": true,
+      "order": 3,
+      "include_toc": true
+    },
+    {
+      "name": "CFD Simulation Results",
+      "enabled": true,
+      "order": 4,
+      "include_toc": true
+    },
+    {
+      "name": "UV System Analysis",
+      "enabled": true,
+      "order": 5,
+      "include_toc": true
+    },
+    {
+      "name": "Component List",
+      "enabled": true,
+      "order": 6,
+      "include_toc": true
+    },
+    {
+      "name": "3D Renderings",
+      "enabled": false,
+      "order": 7,
+      "include_toc": true
+    },
+    {
+      "name": "Appendices",
+      "enabled": true,
+      "order": 8,
+      "include_toc": false
+    }
+  ],
+  "watermark": {
+    "enabled": false,
+    "text": "DRAFT",
+    "opacity": 0.1
+  }
+}
