@@ -1,3 +1,10 @@
-streamlit
-pandas
-plotly
+# Core dependencies
+streamlit>=1.29.0
+pandas>=2.0.0
+plotly>=5.18.0
+
+# Phase 9: Integration Layer + White-Labeling + Internationalization
+Pillow>=10.0.0  # Image processing for logo upload
+python-i18n>=0.3.9  # Internationalization support (optional, using custom implementation)
+
+# Additional utilities

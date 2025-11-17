@@ -1,0 +1,83 @@
+{
+  "config_version": "1.0",
+  "saved_date": "2025-01-20T10:00:00Z",
+  "description": "IEC 61215 - Terrestrial PV modules - Design qualification and type approval",
+  "template_name": "IEC 61215",
+
+  "chamber_specs": {
+    "length": 3200,
+    "width": 2100,
+    "height": 2200,
+    "temperature_min": -40,
+    "temperature_max": 85,
+    "humidity_min": 40,
+    "humidity_max": 95,
+    "temp_uniformity_target": 2.0,
+    "humidity_uniformity_target": 3.0,
+    "heating_rate": 3.0,
+    "cooling_rate": 1.0
+  },
+
+  "uv_system": {
+    "uv_intensity": 60,
+    "wavelength_range": "280-400 nm",
+    "led_type": "LED (45% efficiency)",
+    "num_modules": 2,
+    "uniformity_target": 15,
+    "required_leds": 28,
+    "total_power": 2400
+  },
+
+  "test_recipes": {
+    "thermal_cycling": {
+      "name": "Thermal Cycling (TC 200)",
+      "cycles": 200,
+      "temp_high": 85,
+      "temp_low": -40,
+      "dwell_time_min": 10,
+      "transition_time_max": 6
+    },
+    "damp_heat": {
+      "name": "Damp Heat (DH 1000)",
+      "duration_hours": 1000,
+      "temperature": 85,
+      "humidity": 85,
+      "tolerance_temp": 2,
+      "tolerance_humidity": 3
+    },
+    "humidity_freeze": {
+      "name": "Humidity-Freeze (HF 10)",
+      "cycles": 10,
+      "temp_high": 85,
+      "temp_low": -40,
+      "humidity_high": 85,
+      "dwell_time_min": 20
+    },
+    "uv_preconditioning": {
+      "name": "UV Preconditioning",
+      "duration_hours": 168,
+      "uv_dose": "15 kWh/m²",
+      "temperature": 60,
+      "intensity": "60 W/m²"
+    }
+  },
+
+  "cfd_settings": {
+    "mesh_density": "medium",
+    "turbulence_model": "k-epsilon",
+    "convergence_criteria": 1e-6,
+    "max_iterations": 1000
+  },
+
+  "user_preferences": {
+    "language": "en_US",
+    "theme": "light",
+    "units_system": "metric"
+  },
+
+  "compliance": {
+    "standard": "IEC 61215",
+    "version": "2021",
+    "certification_body": "TUV/UL/CSA"
+  }
+}
