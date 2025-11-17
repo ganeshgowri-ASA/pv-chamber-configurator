@@ -63,7 +63,19 @@ try:
     from modules.customer_db import CustomerDatabase
     from modules import payment_calculator
 except ImportError:
-    pass  # Will be available after Phase 6 merge
+    pass
+
+# Import Business Analysis modules (with error handling)
+try:
+    from modules.business_analysis_enhanced import (
+        BusinessAnalysisEnhanced,
+        ChamberConfig,
+        OperatingCosts,
+        RevenueParams,
+        FinancialAssumptions
+    )
+except ImportError:
+    pass
 
 # Page configuration
 st.set_page_config(

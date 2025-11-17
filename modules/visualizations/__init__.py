@@ -1,5 +1,5 @@
 """
-Visualization modules for UV optical system, CFD, chamber analysis, and HMI components
+Visualization modules for UV optical system, CFD, chamber analysis, HMI components, and business charts
 """
 
 from .uv_heatmap_3d import UVHeatmapVisualizer
