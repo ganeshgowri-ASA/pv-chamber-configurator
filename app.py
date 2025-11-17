@@ -56,6 +56,15 @@ from modules.init_database import initialize_database
 from modules.virtual_hmi import VirtualHMI
 from modules.robot_controller import RobotController
 
+# Import Quote Generator modules (with error handling)
+try:
+    from modules.quote_generator import QuoteGenerator
+    from modules.email_system import EmailSystem
+    from modules.customer_db import CustomerDatabase
+    from modules import payment_calculator
+except ImportError:
+    pass  # Will be available after Phase 6 merge
+
 # Page configuration
 st.set_page_config(
     page_title="PV Chamber Configurator",

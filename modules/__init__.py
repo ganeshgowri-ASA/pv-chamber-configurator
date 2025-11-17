@@ -3,7 +3,7 @@ PV Chamber Configurator - Modules Package
 
 Comprehensive calculation and simulation modules for UV+TC+HF+DH chamber design
 including UV optical system design, CFD analysis, chamber performance evaluation,
-supplier database management, and virtual HMI controls.
+supplier database management, virtual HMI controls, quote generation, and email system.
 """
 
 __version__ = "1.0.0"
