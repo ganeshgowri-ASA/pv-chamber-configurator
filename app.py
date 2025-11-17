@@ -85,14 +85,75 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Initialize session state
+if 'initialized' not in st.session_state:
+    st.session_state.initialized = True
+    st.session_state.integration_layer = IntegrationLayer(st.session_state)
+    st.session_state.white_label_manager = WhiteLabelManager()
+    st.session_state.i18n_manager = I18nManager()
+    st.session_state.config_manager = ConfigManager()
+
+    # Set default values
+    st.session_state.current_locale = 'en_US'
+    st.session_state.branding_applied = False
+
+# Shorthand for translation
+def t(key, **kwargs):
+    """Translate text using i18n manager"""
+    return st.session_state.i18n_manager.translate(key, **kwargs)
+
+# Apply custom CSS for branding
+def apply_custom_css():
+    """Apply custom CSS based on white-label settings"""
+    wl_manager = st.session_state.white_label_manager
+    css_vars = wl_manager.get_css_variables()
+
+    custom_css = f"""
+    <style>
+    {css_vars}
+
+    .stButton > button {{
+        background-color: var(--primary-color);
+        color: white;
+    }}
+
+    .stButton > button:hover {{
+        background-color: var(--secondary-color);
+    }}
+
+    h1, h2, h3 {{
+        font-family: var(--font-family);
+    }}
+
+    .metric-card {{
+        background-color: #f0f2f6;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-left: 4px solid var(--primary-color);
+    }}
+    </style>
+    """
+    st.markdown(custom_css, unsafe_allow_html=True)
+
+apply_custom_css()
+
+# Display logo if available
+logo_base64 = st.session_state.white_label_manager.get_logo_base64()
+if logo_base64:
+    st.markdown(
+        f'<img src="{logo_base64}" style="max-width: 300px; max-height: 100px; margin-bottom: 20px;">',
+        unsafe_allow_html=True
+    )
+
 # Title and description
-st.title("🔬 UV+TC+HF+DH Chamber Configurator")
-st.markdown("""
-Comprehensive Environmental Test Chamber Configurator & Quote Generation System  
-for PV Module Testing with CFD Simulations, Virtual HMI, and Business Analysis
+company_name = st.session_state.white_label_manager.config['company']['name']
+st.title(f"🔬 {t('app_title')}")
+st.markdown(f"""
+{t('app_subtitle')}
+{t('app_description')}
 """)
 
-# Sidebar for company branding
+# Sidebar
 with st.sidebar:
     st.header("🎨 Company Branding")
 
@@ -1142,15 +1203,15 @@ with tab5:
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.metric("Temperature", "85.0°C", "±0.2°C")
+        st.metric(t('metrics.temperature'), "85.0" + t('units.celsius'), "±0.2" + t('units.celsius'))
         st.progress(85/105)
 
     with col2:
-        st.metric("Humidity", "85.0%RH", "±0.5%")
+        st.metric(t('metrics.humidity'), "85.0" + t('units.rh'), "±0.5" + t('units.rh'))
         st.progress(85/100)
 
     with col3:
-        st.metric("UV Intensity", "248 W/m²", "±2 W/m²")
+        st.metric(t('labels.uv_intensity'), "248 " + t('units.w_m2'), "±2 " + t('units.w_m2'))
         st.progress(248/250)
 
     st.info("🔄 System Status: Running | ⏰ Runtime: 1,245 hours | ✅ All sensors calibrated")
@@ -1502,9 +1563,10 @@ with tab6:
 
 # Footer
 st.divider()
+company_info = st.session_state.white_label_manager.config['company']
 st.markdown(f"""
 ---
-**{company_name}** | {company_address} | {company_email}  
-Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}  
-*White-labeled PV Chamber Configurator v1.0*
+**{company_info['name']}** | {company_info['address']} | {company_info['email']}
+{t('footer.generated_on')}: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+*{t('footer.version')}*
 """)

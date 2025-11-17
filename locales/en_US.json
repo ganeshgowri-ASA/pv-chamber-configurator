@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "language_name": "English",
+    "language_code": "en_US",
+    "direction": "ltr",
+    "contributors": ["PV Chamber Configurator Team"]
+  },
+  "app_title": "PV Chamber Configurator",
+  "app_subtitle": "Comprehensive Environmental Test Chamber Configurator & Quote Generation System",
+  "app_description": "for PV Module Testing with CFD Simulations, Virtual HMI, and Business Analysis",
+
+  "sidebar": {
+    "title": "Navigation",
+    "white_label_settings": "White-Label Settings",
+    "language": "Language",
+    "core_calculations": "Core Calculations",
+    "uv_system": "UV Optical System",
+    "cfd_simulation": "CFD Simulation",
+    "supplier_database": "Supplier Database",
+    "virtual_hmi": "Virtual HMI",
+    "quote_generator": "Quote Generator",
+    "business_analysis": "Business Analysis",
+    "reports": "Reports",
+    "compliance": "Compliance Checker",
+    "quick_stats": "Quick Stats",
+    "total_cost": "Total Cost",
+    "delivery": "Delivery",
+    "warranty": "Warranty",
+    "config_management": "Configuration Management",
+    "save_config": "Save Configuration",
+    "load_config": "Load Configuration"
+  },
+
+  "tabs": {
+    "chamber_design": "Chamber Design",
+    "uv_system": "UV System",
+    "quote_generator": "Quote Generator",
+    "business_analysis": "Business Analysis",
+    "virtual_hmi": "Virtual HMI",
+    "white_label": "White-Label Settings",
+    "config_templates": "Configuration Templates"
+  },
+
+  "buttons": {
+    "calculate": "Calculate",
+    "generate": "Generate",
+    "export": "Export",
+    "save": "Save",
+    "load": "Load",
+    "reset": "Reset",
+    "apply": "Apply",
+    "cancel": "Cancel",
+    "upload": "Upload",
+    "download": "Download",
+    "preview": "Preview",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Update"
+  },
+
+  "labels": {
+    "chamber_specs": "Chamber Specifications",
+    "dimensions": "Dimensions",
+    "length": "Length (mm)",
+    "width": "Width (mm)",
+    "height": "Height (mm)",
+    "internal_volume": "Internal Volume",
+    "performance": "Performance",
+    "temperature_range": "Temperature Range (°C)",
+    "humidity_range": "Humidity Range (%RH)",
+    "uv_intensity": "UV Intensity (W/m²)",
+    "led_type": "LED Type",
+    "num_modules": "Number of PV Modules",
+    "required_leds": "Required LEDs",
+    "total_uv_power": "Total UV Power",
+    "uniformity": "Uniformity",
+    "company_name": "Company Name",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "website": "Website",
+    "logo": "Logo",
+    "primary_color": "Primary Brand Color",
+    "secondary_color": "Secondary Brand Color",
+    "font_family": "Font Family",
+    "configuration_name": "Configuration Name",
+    "description": "Description",
+    "template_name": "Template Name"
+  },
+
+  "placeholders": {
+    "company_name": "Enter company name",
+    "address": "Enter complete address",
+    "email": "contact@company.com",
+    "phone": "+91-XXX-XXX-XXXX",
+    "website": "https://company.com",
+    "config_name": "My Configuration",
+    "description": "Enter description"
+  },
+
+  "headings": {
+    "chamber_design": "Chamber Design Specifications",
+    "uv_optical_system": "UV Optical System",
+    "cost_breakdown": "Cost Breakdown",
+    "commercial_quote": "Commercial Quote Generator",
+    "business_metrics": "Business Analysis",
+    "virtual_hmi_monitoring": "Virtual HMI - Real-time Monitoring",
+    "white_label_config": "White-Label Configuration",
+    "company_branding": "Company Branding",
+    "logo_upload": "Logo Upload",
+    "brand_colors": "Brand Colors",
+    "configuration_templates": "Configuration Templates",
+    "save_configuration": "Save Configuration",
+    "load_configuration": "Load Configuration"
+  },
+
+  "messages": {
+    "success": {
+      "config_saved": "Configuration saved successfully",
+      "config_loaded": "Configuration loaded successfully",
+      "template_created": "Template created successfully",
+      "logo_uploaded": "Logo uploaded successfully",
+      "branding_applied": "Branding applied successfully",
+      "settings_updated": "Settings updated successfully"
+    },
+    "error": {
+      "config_save_failed": "Failed to save configuration",
+      "config_load_failed": "Failed to load configuration",
+      "invalid_file": "Invalid file format",
+      "upload_failed": "Upload failed",
+      "validation_failed": "Validation failed"
+    },
+    "warning": {
+      "unsaved_changes": "You have unsaved changes",
+      "large_file": "File size is large, may take time to process",
+      "missing_data": "Some required data is missing"
+    },
+    "info": {
+      "iec_compliant": "IEC 61215/61730 Compliant",
+      "system_running": "System Status: Running",
+      "calibrated": "All sensors calibrated",
+      "no_templates": "No templates available",
+      "select_file": "Please select a file"
+    }
+  },
+
+  "tooltips": {
+    "temp_uniformity": "Temperature uniformity measures variation across chamber volume. Target: ±2°C",
+    "humidity_uniformity": "Humidity uniformity measures RH variation. Target: ±3%RH",
+    "uv_intensity_info": "UV intensity is measured at the module surface. IEC 61215 requires 60 W/m² ±15%",
+    "chamber_volume": "Total internal volume of the test chamber in cubic meters",
+    "led_efficiency": "LED efficiency affects power consumption and heat generation",
+    "tco_components": "Total Cost of Ownership includes capital, operational, and maintenance costs",
+    "payment_terms": "Standard payment terms: 40% advance, 40% before dispatch, 20% after installation",
+    "delivery_time": "Typical delivery time includes manufacturing and installation",
+    "warranty_period": "Comprehensive warranty covering all components and labor",
+    "logo_requirements": "Upload PNG/JPG/SVG. Max size: 2MB. Max dimensions: 1000x500px",
+    "primary_color_info": "Primary color is used for buttons, headers, and main UI elements",
+    "secondary_color_info": "Secondary color is used for links, accents, and secondary UI elements",
+    "config_save_info": "Save complete system configuration for later use or sharing",
+    "template_info": "Templates are pre-configured settings for common test scenarios"
+  },
+
+  "cost_components": {
+    "chamber_system": "Chamber System",
+    "uv_led_arrays": "UV LED Arrays",
+    "refrigeration": "Refrigeration",
+    "controls_hmi": "Controls/HMI",
+    "dc_power_supply": "DC Power Supply",
+    "uniformity_robot": "Uniformity Robot",
+    "water_treatment": "Water Treatment",
+    "installation": "Installation",
+    "calibration": "Calibration"
+  },
+
+  "metrics": {
+    "ten_year_tco": "10-Year TCO",
+    "roi_period": "ROI Period",
+    "annual_revenue": "Annual Revenue",
+    "co2_emissions": "CO₂ Emissions",
+    "energy_cost": "Energy Cost",
+    "mtbf": "MTBF",
+    "temperature": "Temperature",
+    "humidity": "Humidity",
+    "runtime": "Runtime"
+  },
+
+  "units": {
+    "mm": "mm",
+    "m3": "m³",
+    "celsius": "°C",
+    "rh": "%RH",
+    "w_m2": "W/m²",
+    "kw": "kW",
+    "units": "units",
+    "percent": "%",
+    "lakhs": "₹L",
+    "crores": "₹Cr",
+    "years": "years",
+    "weeks": "weeks",
+    "months": "months",
+    "hours": "hours",
+    "tonnes_yr": "tonnes/yr"
+  },
+
+  "validation": {
+    "required_field": "This field is required",
+    "invalid_email": "Invalid email format",
+    "invalid_phone": "Invalid phone number",
+    "invalid_url": "Invalid URL format",
+    "value_too_small": "Value is too small",
+    "value_too_large": "Value is too large",
+    "invalid_range": "Invalid range",
+    "file_too_large": "File size exceeds maximum allowed",
+    "invalid_dimensions": "Image dimensions exceed maximum allowed",
+    "unsupported_format": "Unsupported file format"
+  },
+
+  "footer": {
+    "generated_on": "Generated on",
+    "powered_by": "Powered by",
+    "version": "White-labeled PV Chamber Configurator v1.0"
+  }
+}
