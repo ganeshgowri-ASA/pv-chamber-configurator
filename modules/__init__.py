@@ -2,7 +2,8 @@
 PV Chamber Configurator - Modules Package
 
 Comprehensive modules for UV optical system design, CFD simulation, supplier database,
-virtual HMI, robot control, quote generation, email system, payment calculation, and analysis.
+virtual HMI, robot control, quote generation, email system, payment calculation,
+business analysis, financial modeling, and reporting.
 """
 
 from .supplier_database import SupplierDatabaseManager
@@ -25,4 +26,4 @@ __all__ = [
     'extract_component_prices'
 ]
 
-__version__ = "6.0.0"
+__version__ = "7.0.0"
