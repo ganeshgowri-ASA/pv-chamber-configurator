@@ -4,7 +4,8 @@ PV Chamber Configurator - Modules Package
 Comprehensive modules for UV optical system design, CFD simulation, supplier database,
 virtual HMI, robot control, quote generation, email system, payment calculation,
 business analysis, financial modeling, comprehensive report generation,
-integration layer, white-labeling, and internationalization.
+integration layer, white-labeling, internationalization,
+IEC/ISO compliance validation, and ISO/IEC 17025 calibration management.
 """
 
 from .supplier_database import SupplierDatabaseManager
@@ -26,6 +27,17 @@ from .integration_layer import IntegrationLayer
 from .white_label_manager import WhiteLabelManager
 from .i18n_manager import I18nManager
 from .config_manager import ConfigManager
+from .iec_compliance import IECComplianceChecker, ChamberSpecifications, ComplianceResult
+from .iso17025_calibration import (
+    ISO17025Calibration,
+    LabAccreditation,
+    AccreditationBody,
+    InstrumentData,
+    InstrumentType,
+    CalibrationCertificate
+)
+from .uncertainty_calculator import UncertaintyCalculator, UncertaintyBudget, UncertaintySource
+from .compliance_checklist import ComplianceChecklist, ChecklistItem, ChecklistStatus
 
 __all__ = [
     'SupplierDatabaseManager',
@@ -48,7 +60,22 @@ __all__ = [
     'IntegrationLayer',
     'WhiteLabelManager',
     'I18nManager',
-    'ConfigManager'
+    'ConfigManager',
+    'IECComplianceChecker',
+    'ChamberSpecifications',
+    'ComplianceResult',
+    'ISO17025Calibration',
+    'LabAccreditation',
+    'AccreditationBody',
+    'InstrumentData',
+    'InstrumentType',
+    'CalibrationCertificate',
+    'UncertaintyCalculator',
+    'UncertaintyBudget',
+    'UncertaintySource',
+    'ComplianceChecklist',
+    'ChecklistItem',
+    'ChecklistStatus'
 ]
 
-__version__ = "9.0.0"
+__version__ = "10.0.0"

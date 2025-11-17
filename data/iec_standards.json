@@ -1,0 +1,299 @@
+{
+  "IEC_61215": {
+    "standard_name": "Terrestrial photovoltaic (PV) modules - Design qualification and type approval",
+    "version": "IEC 61215-1:2021, IEC 61215-2:2021",
+    "MST_01_Visual": {
+      "name": "Visual Inspection",
+      "description": "Visual examination for workmanship defects",
+      "requirements": "No visual defects, cracks, delamination, or bubbles"
+    },
+    "MST_02_Max_Power": {
+      "name": "Maximum Power Determination",
+      "description": "Measure Pmax at STC",
+      "conditions": "1000 W/m², 25°C, AM1.5 spectrum",
+      "requirements": "Pmax within rated tolerance"
+    },
+    "MST_05_Insulation": {
+      "name": "Insulation Test",
+      "description": "Wet insulation resistance test",
+      "test_voltage": 1000,
+      "test_voltage_unit": "V",
+      "duration_seconds": 60,
+      "min_resistance_mohm": 40,
+      "requirements": "≥40 MΩ or ≥400 Ω/V"
+    },
+    "MST_06_Temp_Coeff": {
+      "name": "Temperature Coefficient Measurement",
+      "description": "Measure Pmax temperature coefficients",
+      "temp_range": [15, 60],
+      "temp_range_unit": "°C",
+      "requirements": "Determine αIsc, βVoc, γPmax"
+    },
+    "MST_09_Outdoor": {
+      "name": "Outdoor Exposure Test",
+      "description": "Natural sunlight exposure",
+      "irradiance_min": 60,
+      "irradiance_min_unit": "kWh/m²",
+      "requirements": "Min 60 kWh/m² total irradiance"
+    },
+    "MST_10_Hot_Spot": {
+      "name": "Hot-Spot Endurance Test",
+      "description": "Test for hot-spot heating effects",
+      "test_current": "1.25 × Isc",
+      "duration_hours": 1,
+      "requirements": "No damage or safety hazard"
+    },
+    "MST_11_UV": {
+      "name": "UV Preconditioning Test",
+      "uv_dose": 15.0,
+      "uv_dose_unit": "kWh/m²",
+      "wavelength_min": 280,
+      "wavelength_max": 400,
+      "wavelength_unit": "nm",
+      "spectral_requirement": "UVA 90-97%, UVB 3-10%",
+      "intensity": 60,
+      "intensity_unit": "W/m²",
+      "temperature": 60,
+      "temp_tolerance": 5,
+      "temperature_unit": "°C",
+      "duration_hours": 250,
+      "requirements": "15±0.5 kWh/m² UV dose, 280-400nm spectrum"
+    },
+    "MST_12_Thermal_Cycling": {
+      "name": "Thermal Cycling Test",
+      "cycles": 200,
+      "temp_low": -40,
+      "temp_high": 85,
+      "temp_unit": "°C",
+      "dwell_time_minutes": 30,
+      "ramp_rate_min": 1.0,
+      "ramp_rate_max": 3.0,
+      "ramp_rate_unit": "°C/min",
+      "requirements": "200 cycles, -40°C to +85°C, Pmax degradation <5%"
+    },
+    "MST_13_Humidity_Freeze": {
+      "name": "Humidity-Freeze Test",
+      "cycles": 10,
+      "temp_high": 85,
+      "humidity_high": 85,
+      "temp_low": -40,
+      "temp_unit": "°C",
+      "humidity_unit": "%RH",
+      "dwell_high_hours": 20,
+      "dwell_low_hours": 4,
+      "requirements": "10 cycles, 85°C/85%RH to -40°C, Pmax degradation <5%"
+    },
+    "MST_14_Damp_Heat": {
+      "name": "Damp Heat Test",
+      "temperature": 85,
+      "temp_tolerance": 2,
+      "humidity": 85,
+      "humidity_tolerance": 5,
+      "temp_unit": "°C",
+      "humidity_unit": "%RH",
+      "duration_hours": 1000,
+      "requirements": "1000h at 85°C/85%RH, Pmax degradation <5%, pass insulation test"
+    },
+    "MST_15_Terminations": {
+      "name": "Robustness of Terminations Test",
+      "description": "Cable pull and twist test",
+      "pull_force_n": 50,
+      "twist_cycles": 10,
+      "requirements": "No damage to terminations or insulation"
+    },
+    "MST_16_Wet_Leakage": {
+      "name": "Wet Leakage Current Test",
+      "description": "Leakage current measurement after wetting",
+      "spray_duration_minutes": 5,
+      "measurement_voltage": "0.75 × VOC + 0.25 × Vmax",
+      "max_leakage_current_ma": 2.5,
+      "requirements": "Leakage current <2.5 mA"
+    },
+    "MST_17_Mechanical_Load": {
+      "name": "Mechanical Load Test",
+      "description": "Static and dynamic mechanical loading",
+      "static_load_pa": 2400,
+      "dynamic_load_pa": 1000,
+      "cycles": 1000,
+      "requirements": "Pmax degradation <5%, no damage"
+    },
+    "MST_18_Hail": {
+      "name": "Hail Impact Test",
+      "description": "Ice ball impact test",
+      "ball_diameter_mm": 25,
+      "impact_velocity_ms": 23,
+      "impact_points": 11,
+      "requirements": "No broken cells or major cracks"
+    }
+  },
+  "IEC_61730": {
+    "standard_name": "Photovoltaic (PV) module safety qualification",
+    "version": "IEC 61730-1:2016, IEC 61730-2:2016",
+    "MST_01_Safety": {
+      "name": "Module Safety Qualification (General)",
+      "description": "General safety requirements",
+      "requirements": "Compliance with electrical, mechanical, and fire safety"
+    },
+    "MST_23_Hot_Spot": {
+      "name": "Hot Spot Endurance",
+      "temperature": 75,
+      "temp_tolerance": 5,
+      "temp_unit": "°C",
+      "duration_hours": 5,
+      "test_current": "1.25 × Isc",
+      "requirements": "No fire hazard, maintain insulation"
+    },
+    "MST_34_UV_Conditioning": {
+      "name": "UV Conditioning",
+      "uv_dose": 60.0,
+      "uv_dose_unit": "kWh/m²",
+      "intensity": 60,
+      "intensity_unit": "W/m²",
+      "temperature": 60,
+      "temp_tolerance": 5,
+      "temp_unit": "°C",
+      "wavelength_range": "280-400 nm",
+      "requirements": "60 kWh/m² UV exposure, no safety hazard"
+    },
+    "MST_44_Thermal_Cycling": {
+      "name": "Thermal Cycling (Safety)",
+      "cycles": 50,
+      "temp_low": -40,
+      "temp_high": 85,
+      "temp_unit": "°C",
+      "dwell_time_minutes": 30,
+      "requirements": "50 cycles, maintain safety integrity"
+    },
+    "MST_50_Damp_Heat": {
+      "name": "Damp Heat (Safety)",
+      "temperature": 85,
+      "humidity": 85,
+      "temp_unit": "°C",
+      "humidity_unit": "%RH",
+      "duration_hours": 1000,
+      "requirements": "1000h exposure, maintain electrical safety"
+    },
+    "MST_51_Humidity_Freeze": {
+      "name": "Humidity Freeze (Safety)",
+      "cycles": 10,
+      "temp_high": 85,
+      "humidity_high": 85,
+      "temp_low": -40,
+      "requirements": "10 cycles, maintain safety"
+    }
+  },
+  "IEC_60068": {
+    "standard_name": "Environmental testing guidance for temperature chambers",
+    "version": "IEC 60068-3-5:2018, IEC 60068-3-6:2018",
+    "Part_3_5": {
+      "name": "Temperature test chambers",
+      "scope": "Guidance for temperature test chambers"
+    },
+    "Part_3_6": {
+      "name": "Temperature and humidity test chambers",
+      "scope": "Guidance for combined temperature and humidity chambers"
+    },
+    "temp_uniformity": {
+      "name": "Temperature Uniformity",
+      "max_deviation": 2.0,
+      "max_deviation_unit": "°C",
+      "description": "Maximum temperature deviation in working space",
+      "requirements": "±2°C or better across test volume"
+    },
+    "air_velocity": {
+      "name": "Air Velocity at Specimen",
+      "max_velocity": 2.0,
+      "max_velocity_unit": "m/s",
+      "description": "Maximum air velocity at test specimen location",
+      "requirements": "≤2 m/s at specimen, preferably ≤1 m/s"
+    },
+    "recovery_time": {
+      "name": "Temperature Recovery Time",
+      "max_time_minutes": 30,
+      "description": "Time to recover setpoint after door opening or specimen insertion",
+      "requirements": "Chamber recovers to setpoint within 30 minutes"
+    },
+    "chamber_volume": {
+      "name": "Test Chamber Volume",
+      "description": "Working space volume requirements",
+      "min_volume_factor": 5,
+      "requirements": "Chamber volume ≥5× specimen volume for natural convection"
+    },
+    "temperature_gradient": {
+      "name": "Temperature Gradient",
+      "max_gradient": 1.0,
+      "max_gradient_unit": "°C/m",
+      "description": "Maximum temperature gradient in working space",
+      "requirements": "≤1°C/m vertical gradient"
+    },
+    "sensor_placement": {
+      "name": "Sensor Placement",
+      "description": "Temperature sensor positioning requirements",
+      "requirements": "Sensors placed at specimen location, shielded from radiation"
+    }
+  },
+  "test_sequences": {
+    "IEC_61215_Full_Sequence": {
+      "description": "Complete IEC 61215 test sequence for crystalline silicon modules",
+      "sequence": [
+        "MST_01_Visual",
+        "MST_02_Max_Power",
+        "MST_05_Insulation",
+        "MST_06_Temp_Coeff",
+        "MST_11_UV",
+        "MST_12_Thermal_Cycling",
+        "MST_13_Humidity_Freeze",
+        "MST_14_Damp_Heat",
+        "MST_15_Terminations",
+        "MST_16_Wet_Leakage",
+        "MST_17_Mechanical_Load",
+        "MST_18_Hail",
+        "MST_10_Hot_Spot"
+      ],
+      "estimated_duration_days": 60,
+      "note": "Tests may be performed in different order per IEC 61215"
+    },
+    "IEC_61730_Safety_Sequence": {
+      "description": "IEC 61730 safety qualification sequence",
+      "sequence": [
+        "MST_01_Safety",
+        "MST_34_UV_Conditioning",
+        "MST_44_Thermal_Cycling",
+        "MST_50_Damp_Heat",
+        "MST_23_Hot_Spot"
+      ],
+      "estimated_duration_days": 50
+    }
+  },
+  "chamber_requirements_summary": {
+    "temperature_range": {
+      "min": -40,
+      "max": 85,
+      "unit": "°C",
+      "note": "Required for IEC 61215 thermal cycling"
+    },
+    "humidity_range": {
+      "min": 40,
+      "max": 85,
+      "unit": "%RH",
+      "note": "Required for damp heat test"
+    },
+    "uv_system": {
+      "required": true,
+      "intensity": 60,
+      "intensity_unit": "W/m²",
+      "wavelength_range": "280-400 nm",
+      "note": "Required for UV preconditioning"
+    },
+    "uniformity": {
+      "temperature": 2.0,
+      "temperature_unit": "°C",
+      "note": "Per IEC 60068-3-5"
+    },
+    "air_velocity": {
+      "max": 2.0,
+      "unit": "m/s",
+      "note": "Per IEC 60068-3-6"
+    }
+  }
+}

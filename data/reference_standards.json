@@ -1,0 +1,315 @@
+{
+  "laboratory_info": {
+    "name": "PV Testing Laboratory",
+    "accreditation_body": "NABL",
+    "certificate_number": "TC-1234",
+    "scope": "Temperature, Humidity, UV Irradiance, Pressure Calibration",
+    "valid_until": "2026-12-31"
+  },
+  "standards": [
+    {
+      "id": "RTD-REF-001",
+      "name": "Reference Platinum Resistance Thermometer",
+      "make": "Fluke",
+      "model": "5608",
+      "serial_number": "3021234",
+      "certificate_number": "NIST-2024-T-45678",
+      "calibration_date": "2024-06-15",
+      "next_calibration_date": "2025-06-15",
+      "uncertainty": 0.025,
+      "uncertainty_unit": "°C",
+      "traceability": "NIST",
+      "parameter_type": "Temperature",
+      "range_min": -50.0,
+      "range_max": 150.0
+    },
+    {
+      "id": "RTD-REF-002",
+      "name": "Reference RTD (Extended Range)",
+      "make": "Hart Scientific",
+      "model": "5681",
+      "serial_number": "HS-987654",
+      "certificate_number": "NIST-2024-T-67890",
+      "calibration_date": "2024-05-20",
+      "next_calibration_date": "2025-05-20",
+      "uncertainty": 0.05,
+      "uncertainty_unit": "°C",
+      "traceability": "NIST",
+      "parameter_type": "Temperature",
+      "range_min": -100.0,
+      "range_max": 200.0
+    },
+    {
+      "id": "TC-REF-001",
+      "name": "Reference Thermocouple Type K",
+      "make": "Omega",
+      "model": "KMQXL-125",
+      "serial_number": "TC-445566",
+      "certificate_number": "NIST-2024-TC-11223",
+      "calibration_date": "2024-07-10",
+      "next_calibration_date": "2025-07-10",
+      "uncertainty": 0.15,
+      "uncertainty_unit": "°C",
+      "traceability": "NIST",
+      "parameter_type": "Temperature",
+      "range_min": -40.0,
+      "range_max": 400.0
+    },
+    {
+      "id": "RH-REF-001",
+      "name": "Reference Humidity Generator",
+      "make": "Thunder Scientific",
+      "model": "2500",
+      "serial_number": "TS-112233",
+      "certificate_number": "NIST-2024-H-33445",
+      "calibration_date": "2024-08-01",
+      "next_calibration_date": "2025-08-01",
+      "uncertainty": 0.5,
+      "uncertainty_unit": "%RH",
+      "traceability": "NIST",
+      "parameter_type": "Humidity",
+      "range_min": 10.0,
+      "range_max": 95.0
+    },
+    {
+      "id": "RH-REF-002",
+      "name": "Reference Chilled Mirror Hygrometer",
+      "make": "MBW",
+      "model": "DP3-D-HP",
+      "serial_number": "MBW-998877",
+      "certificate_number": "NIST-2024-H-55667",
+      "calibration_date": "2024-07-25",
+      "next_calibration_date": "2025-07-25",
+      "uncertainty": 0.3,
+      "uncertainty_unit": "°C (dew point)",
+      "traceability": "NIST",
+      "parameter_type": "Humidity",
+      "range_min": 5.0,
+      "range_max": 95.0
+    },
+    {
+      "id": "UV-REF-001",
+      "name": "Reference UV Radiometer",
+      "make": "Kipp & Zonen",
+      "model": "UVS-AE-T",
+      "serial_number": "KZ-776655",
+      "certificate_number": "NIST-2024-UV-77889",
+      "calibration_date": "2024-09-05",
+      "next_calibration_date": "2025-09-05",
+      "uncertainty": 2.0,
+      "uncertainty_unit": "W/m²",
+      "traceability": "NIST",
+      "parameter_type": "UV Irradiance",
+      "range_min": 10.0,
+      "range_max": 300.0
+    },
+    {
+      "id": "UV-REF-002",
+      "name": "Reference Spectroradiometer",
+      "make": "Ocean Optics",
+      "model": "FLAME-S-UV-VIS",
+      "serial_number": "OO-334455",
+      "certificate_number": "NIST-2024-SR-99001",
+      "calibration_date": "2024-08-15",
+      "next_calibration_date": "2025-08-15",
+      "uncertainty": 3.0,
+      "uncertainty_unit": "%",
+      "traceability": "NIST",
+      "parameter_type": "Spectral Irradiance",
+      "range_min": 280.0,
+      "range_max": 800.0
+    },
+    {
+      "id": "PRESS-REF-001",
+      "name": "Reference Barometer",
+      "make": "Paroscientific",
+      "model": "760-16B",
+      "serial_number": "PS-223344",
+      "certificate_number": "NIST-2024-P-22334",
+      "calibration_date": "2024-06-30",
+      "next_calibration_date": "2025-06-30",
+      "uncertainty": 0.1,
+      "uncertainty_unit": "kPa",
+      "traceability": "NIST",
+      "parameter_type": "Pressure",
+      "range_min": 50.0,
+      "range_max": 110.0
+    },
+    {
+      "id": "FLOW-REF-001",
+      "name": "Reference Anemometer",
+      "make": "TSI",
+      "model": "8455",
+      "serial_number": "TSI-556677",
+      "certificate_number": "NIST-2024-F-44556",
+      "calibration_date": "2024-07-20",
+      "next_calibration_date": "2025-07-20",
+      "uncertainty": 0.05,
+      "uncertainty_unit": "m/s",
+      "traceability": "NIST",
+      "parameter_type": "Air Velocity",
+      "range_min": 0.1,
+      "range_max": 10.0
+    },
+    {
+      "id": "DMM-REF-001",
+      "name": "Reference Digital Multimeter",
+      "make": "Keysight",
+      "model": "34465A",
+      "serial_number": "KS-887766",
+      "certificate_number": "NIST-2024-E-66778",
+      "calibration_date": "2024-09-10",
+      "next_calibration_date": "2025-09-10",
+      "uncertainty": 0.0024,
+      "uncertainty_unit": "% of reading",
+      "traceability": "NIST",
+      "parameter_type": "DC Voltage",
+      "range_min": 0.0,
+      "range_max": 1000.0
+    }
+  ],
+  "traceability_chains": {
+    "temperature": {
+      "primary_standard": "NIST ITS-90 Realization",
+      "transfer_standard": "Fluke 5608 Reference RTD",
+      "working_standard": "Chamber RTD Sensors",
+      "uncertainty_budget": {
+        "primary": 0.001,
+        "transfer": 0.025,
+        "working": 0.15,
+        "unit": "°C (k=2)"
+      }
+    },
+    "humidity": {
+      "primary_standard": "NIST Humidity Standards Facility",
+      "transfer_standard": "Thunder Scientific 2500 Generator",
+      "working_standard": "Chamber Humidity Sensors",
+      "uncertainty_budget": {
+        "primary": 0.1,
+        "transfer": 0.5,
+        "working": 2.0,
+        "unit": "%RH (k=2)"
+      }
+    },
+    "uv_irradiance": {
+      "primary_standard": "NIST Spectral Irradiance Scale",
+      "transfer_standard": "Kipp & Zonen Reference Radiometer",
+      "working_standard": "UV Radiometers",
+      "uncertainty_budget": {
+        "primary": 1.0,
+        "transfer": 2.0,
+        "working": 5.0,
+        "unit": "% (k=2)"
+      }
+    }
+  },
+  "cmc_tables": {
+    "temperature": [
+      {
+        "parameter": "Temperature",
+        "range": "-50°C to +150°C",
+        "best_measurement_capability": "±0.15°C",
+        "coverage_factor": 2,
+        "confidence_level": "95%",
+        "instrument_type": "RTD, Thermocouple"
+      },
+      {
+        "parameter": "Temperature",
+        "range": "-100°C to -50°C",
+        "best_measurement_capability": "±0.30°C",
+        "coverage_factor": 2,
+        "confidence_level": "95%",
+        "instrument_type": "Thermocouple"
+      },
+      {
+        "parameter": "Temperature",
+        "range": "+150°C to +600°C",
+        "best_measurement_capability": "±0.50°C",
+        "coverage_factor": 2,
+        "confidence_level": "95%",
+        "instrument_type": "Thermocouple"
+      }
+    ],
+    "humidity": [
+      {
+        "parameter": "Relative Humidity",
+        "range": "10% to 95% RH",
+        "best_measurement_capability": "±2.0% RH",
+        "coverage_factor": 2,
+        "confidence_level": "95%",
+        "conditions": "At 23±5°C"
+      },
+      {
+        "parameter": "Relative Humidity",
+        "range": "5% to 10% RH",
+        "best_measurement_capability": "±3.0% RH",
+        "coverage_factor": 2,
+        "confidence_level": "95%",
+        "conditions": "At 23±5°C"
+      }
+    ],
+    "uv_irradiance": [
+      {
+        "parameter": "UV Irradiance",
+        "range": "10 to 250 W/m²",
+        "best_measurement_capability": "±5.0%",
+        "coverage_factor": 2,
+        "confidence_level": "95%",
+        "wavelength_range": "280-400 nm"
+      }
+    ],
+    "pressure": [
+      {
+        "parameter": "Absolute Pressure",
+        "range": "0 to 200 kPa",
+        "best_measurement_capability": "±0.5 kPa",
+        "coverage_factor": 2,
+        "confidence_level": "95%",
+        "instrument_type": "Electronic pressure gauge"
+      }
+    ],
+    "airflow": [
+      {
+        "parameter": "Air Velocity",
+        "range": "0.1 to 10 m/s",
+        "best_measurement_capability": "±0.1 m/s",
+        "coverage_factor": 2,
+        "confidence_level": "95%",
+        "instrument_type": "Hot wire anemometer"
+      }
+    ]
+  },
+  "calibration_procedures": {
+    "temperature_sensor": {
+      "procedure_id": "CAL-TEMP-001",
+      "title": "RTD and Thermocouple Calibration",
+      "method": "Comparison calibration in temperature bath",
+      "calibration_points": [-40, 0, 25, 60, 85, 120],
+      "stability_criterion": "±0.05°C for 10 minutes",
+      "readings_per_point": 3,
+      "environmental_conditions": {
+        "temperature": "23±5°C",
+        "humidity": "50±20% RH"
+      }
+    },
+    "humidity_sensor": {
+      "procedure_id": "CAL-HUM-001",
+      "title": "Humidity Sensor Calibration",
+      "method": "Comparison against reference hygrometer in humidity chamber",
+      "calibration_points": [10, 30, 50, 75, 85, 95],
+      "stability_criterion": "±1% RH for 30 minutes",
+      "readings_per_point": 3,
+      "temperature_control": "25±2°C"
+    },
+    "uv_radiometer": {
+      "procedure_id": "CAL-UV-001",
+      "title": "UV Radiometer Calibration",
+      "method": "Comparison against reference radiometer under UV source",
+      "calibration_points": [25, 60, 100, 150, 200, 250],
+      "unit": "W/m²",
+      "stability_criterion": "±2% for 5 minutes",
+      "readings_per_point": 5,
+      "wavelength_verification": "280-400 nm using spectroradiometer"
+    }
+  }
+}
