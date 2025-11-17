@@ -47,6 +47,11 @@ from modules.visualizations.cfd_plots_3d import (
     create_multi_panel_view
 )
 
+# Import Supplier Database modules
+from modules.supplier_database import SupplierDatabaseManager
+from modules.quote_parser import auto_detect_and_parse
+from modules.init_database import initialize_database
+
 # Page configuration
 st.set_page_config(
     page_title="PV Chamber Configurator",
