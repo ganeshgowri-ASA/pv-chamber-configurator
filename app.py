@@ -52,6 +52,10 @@ from modules.supplier_database import SupplierDatabaseManager
 from modules.quote_parser import auto_detect_and_parse
 from modules.init_database import initialize_database
 
+# Import Virtual HMI modules
+from modules.virtual_hmi import VirtualHMI
+from modules.robot_controller import RobotController
+
 # Page configuration
 st.set_page_config(
     page_title="PV Chamber Configurator",
