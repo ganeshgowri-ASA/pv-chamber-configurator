@@ -1,0 +1,398 @@
+{
+  "IEC_61215_TC200_Thermal_Cycling": {
+    "description": "IEC 61215 TC 200 - Thermal Cycling Test (200 cycles)",
+    "standard": "IEC 61215-2:2016",
+    "test_code": "TC200",
+    "duration_hours": 267,
+    "cycles": 200,
+    "steps": [
+      {
+        "step": 1,
+        "name": "Cold Temperature",
+        "temperature": -40,
+        "humidity": null,
+        "uv_intensity": 0,
+        "duration_minutes": 30,
+        "ramp_rate": 5.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      },
+      {
+        "step": 2,
+        "name": "Hot Temperature",
+        "temperature": 85,
+        "humidity": null,
+        "uv_intensity": 0,
+        "duration_minutes": 30,
+        "ramp_rate": 5.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      },
+      {
+        "step": 3,
+        "name": "Return to Ambient",
+        "temperature": 25,
+        "humidity": null,
+        "uv_intensity": 0,
+        "duration_minutes": 20,
+        "ramp_rate": 3.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      }
+    ],
+    "repeat_steps": [1, 2],
+    "repeat_count": 200,
+    "measurement_intervals": {
+      "temperature": 60,
+      "uniformity_check": 1440
+    }
+  },
+  "IEC_61215_HF10_Humidity_Freeze": {
+    "description": "IEC 61215 HF 10 - Humidity Freeze Test (10 cycles)",
+    "standard": "IEC 61215-2:2016",
+    "test_code": "HF10",
+    "duration_hours": 240,
+    "cycles": 10,
+    "steps": [
+      {
+        "step": 1,
+        "name": "High Humidity Soak",
+        "temperature": 85,
+        "humidity": 85,
+        "uv_intensity": 0,
+        "duration_minutes": 1200,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 2.0,
+          "humidity": 5.0
+        }
+      },
+      {
+        "step": 2,
+        "name": "Freeze",
+        "temperature": -40,
+        "humidity": null,
+        "uv_intensity": 0,
+        "duration_minutes": 60,
+        "ramp_rate": 5.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      },
+      {
+        "step": 3,
+        "name": "Return to Ambient",
+        "temperature": 25,
+        "humidity": 50,
+        "uv_intensity": 0,
+        "duration_minutes": 60,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      }
+    ],
+    "repeat_steps": [1, 2, 3],
+    "repeat_count": 10,
+    "measurement_intervals": {
+      "temperature": 60,
+      "humidity": 60,
+      "uniformity_check": 1440
+    }
+  },
+  "IEC_61215_DH1000_Damp_Heat": {
+    "description": "IEC 61215 DH 1000 - Damp Heat Test (1000 hours)",
+    "standard": "IEC 61215-2:2016",
+    "test_code": "DH1000",
+    "duration_hours": 1000,
+    "cycles": 1,
+    "steps": [
+      {
+        "step": 1,
+        "name": "Ramp to Test Conditions",
+        "temperature": 85,
+        "humidity": 85,
+        "uv_intensity": 0,
+        "duration_minutes": 120,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 2.0,
+          "humidity": 5.0
+        }
+      },
+      {
+        "step": 2,
+        "name": "Damp Heat Exposure",
+        "temperature": 85,
+        "humidity": 85,
+        "uv_intensity": 0,
+        "duration_minutes": 59880,
+        "ramp_rate": 0.5,
+        "tolerance": {
+          "temperature": 2.0,
+          "humidity": 5.0
+        }
+      },
+      {
+        "step": 3,
+        "name": "Cool Down",
+        "temperature": 25,
+        "humidity": 50,
+        "uv_intensity": 0,
+        "duration_minutes": 120,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      }
+    ],
+    "repeat_steps": [],
+    "repeat_count": 1,
+    "measurement_intervals": {
+      "temperature": 60,
+      "humidity": 60,
+      "uniformity_check": 1440
+    }
+  },
+  "IEC_61215_UV_Preconditioning": {
+    "description": "IEC 61215 UV Preconditioning (15 kWh/m²)",
+    "standard": "IEC 61215-2:2016",
+    "test_code": "UV-PC",
+    "duration_hours": 250,
+    "cycles": 1,
+    "total_uv_dose": 15000,
+    "steps": [
+      {
+        "step": 1,
+        "name": "UV Exposure at Elevated Temperature",
+        "temperature": 60,
+        "humidity": 50,
+        "uv_intensity": 60,
+        "duration_minutes": 15000,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 5.0,
+          "uv_intensity": 10.0
+        },
+        "notes": "Maintain 60 W/m² UV-A (300-400nm) until 15 kWh/m² total dose achieved"
+      },
+      {
+        "step": 2,
+        "name": "Cool Down",
+        "temperature": 25,
+        "humidity": 50,
+        "uv_intensity": 0,
+        "duration_minutes": 60,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      }
+    ],
+    "repeat_steps": [],
+    "repeat_count": 1,
+    "measurement_intervals": {
+      "temperature": 60,
+      "uv_intensity": 15,
+      "uniformity_check": 360,
+      "uv_dose_accumulation": 15
+    }
+  },
+  "IEC_61730_MST50_Module_Safety_Thermal": {
+    "description": "IEC 61730 MST 50 - Module Safety Thermal Test",
+    "standard": "IEC 61730-2:2016",
+    "test_code": "MST50",
+    "duration_hours": 48,
+    "cycles": 50,
+    "steps": [
+      {
+        "step": 1,
+        "name": "Hot Cycle",
+        "temperature": 90,
+        "humidity": null,
+        "uv_intensity": 0,
+        "duration_minutes": 30,
+        "ramp_rate": 5.0,
+        "tolerance": {
+          "temperature": 3.0
+        }
+      },
+      {
+        "step": 2,
+        "name": "Cold Cycle",
+        "temperature": -40,
+        "humidity": null,
+        "uv_intensity": 0,
+        "duration_minutes": 30,
+        "ramp_rate": 5.0,
+        "tolerance": {
+          "temperature": 3.0
+        }
+      }
+    ],
+    "repeat_steps": [1, 2],
+    "repeat_count": 50,
+    "measurement_intervals": {
+      "temperature": 30,
+      "uniformity_check": 720
+    }
+  },
+  "Quick_Uniformity_Test": {
+    "description": "Quick Uniformity Verification Test",
+    "standard": "Custom",
+    "test_code": "QUT",
+    "duration_hours": 2,
+    "cycles": 1,
+    "steps": [
+      {
+        "step": 1,
+        "name": "Temperature Uniformity at 85°C",
+        "temperature": 85,
+        "humidity": null,
+        "uv_intensity": 0,
+        "duration_minutes": 30,
+        "ramp_rate": 3.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      },
+      {
+        "step": 2,
+        "name": "Humidity Uniformity at 85%RH",
+        "temperature": 85,
+        "humidity": 85,
+        "uv_intensity": 0,
+        "duration_minutes": 30,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 2.0,
+          "humidity": 5.0
+        }
+      },
+      {
+        "step": 3,
+        "name": "UV Uniformity at 60 W/m²",
+        "temperature": 60,
+        "humidity": 50,
+        "uv_intensity": 60,
+        "duration_minutes": 15,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 5.0,
+          "uv_intensity": 10.0
+        }
+      },
+      {
+        "step": 4,
+        "name": "Return to Ambient",
+        "temperature": 25,
+        "humidity": 50,
+        "uv_intensity": 0,
+        "duration_minutes": 15,
+        "ramp_rate": 3.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      }
+    ],
+    "repeat_steps": [],
+    "repeat_count": 1,
+    "measurement_intervals": {
+      "temperature": 5,
+      "humidity": 5,
+      "uv_intensity": 5,
+      "uniformity_check": 15
+    },
+    "robot_measurement": {
+      "enabled": true,
+      "measurement_points": 9,
+      "measurement_at_steps": [1, 2, 3]
+    }
+  },
+  "Combined_UV_TC_HF_Test": {
+    "description": "Combined UV + Thermal Cycling + Humidity Freeze Sequential Test",
+    "standard": "IEC 61215 Combined",
+    "test_code": "COMBINED",
+    "duration_hours": 1520,
+    "cycles": 1,
+    "steps": [
+      {
+        "step": 1,
+        "name": "UV Preconditioning Phase",
+        "temperature": 60,
+        "humidity": 50,
+        "uv_intensity": 60,
+        "duration_minutes": 15000,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 5.0,
+          "uv_intensity": 10.0
+        }
+      },
+      {
+        "step": 2,
+        "name": "Thermal Cycling Phase (10 cycles)",
+        "temperature": -40,
+        "humidity": null,
+        "uv_intensity": 0,
+        "duration_minutes": 30,
+        "ramp_rate": 5.0,
+        "tolerance": {
+          "temperature": 2.0
+        },
+        "sub_steps": [
+          {"temperature": -40, "duration": 30},
+          {"temperature": 85, "duration": 30}
+        ],
+        "repeat": 10
+      },
+      {
+        "step": 3,
+        "name": "Humidity Freeze Phase (3 cycles)",
+        "temperature": 85,
+        "humidity": 85,
+        "uv_intensity": 0,
+        "duration_minutes": 1200,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 2.0,
+          "humidity": 5.0
+        },
+        "sub_steps": [
+          {"temperature": 85, "humidity": 85, "duration": 1200},
+          {"temperature": -40, "humidity": null, "duration": 60}
+        ],
+        "repeat": 3
+      },
+      {
+        "step": 4,
+        "name": "Final Recovery",
+        "temperature": 25,
+        "humidity": 50,
+        "uv_intensity": 0,
+        "duration_minutes": 120,
+        "ramp_rate": 2.0,
+        "tolerance": {
+          "temperature": 2.0
+        }
+      }
+    ],
+    "repeat_steps": [],
+    "repeat_count": 1,
+    "measurement_intervals": {
+      "temperature": 60,
+      "humidity": 60,
+      "uv_intensity": 15,
+      "uniformity_check": 1440,
+      "uv_dose_accumulation": 15
+    },
+    "robot_measurement": {
+      "enabled": true,
+      "measurement_points": 9,
+      "measurement_at_steps": [1, 4]
+    }
+  }
+}

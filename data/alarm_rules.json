@@ -1,0 +1,124 @@
+{
+  "CRITICAL": [
+    {
+      "name": "TEMP_DEVIATION_HIGH",
+      "condition": "abs(pv - sp) > 5.0",
+      "message": "Temperature deviation >5°C from setpoint",
+      "parameter": "temperature",
+      "priority": 1
+    },
+    {
+      "name": "OVER_TEMPERATURE",
+      "condition": "pv > 110",
+      "message": "Over-temperature alarm - Chamber >110°C",
+      "parameter": "temperature",
+      "priority": 1
+    },
+    {
+      "name": "UNDER_TEMPERATURE",
+      "condition": "pv < -50",
+      "message": "Under-temperature alarm - Chamber <-50°C",
+      "parameter": "temperature",
+      "priority": 1
+    },
+    {
+      "name": "EMERGENCY_STOP",
+      "condition": "emergency_stop == True",
+      "message": "Emergency stop activated",
+      "priority": 1
+    },
+    {
+      "name": "HUMIDITY_CRITICAL_LOW",
+      "condition": "pv < 35",
+      "message": "Humidity critically low <35%RH",
+      "parameter": "humidity",
+      "priority": 2
+    },
+    {
+      "name": "HUMIDITY_CRITICAL_HIGH",
+      "condition": "pv > 98",
+      "message": "Humidity critically high >98%RH",
+      "parameter": "humidity",
+      "priority": 2
+    }
+  ],
+  "WARNING": [
+    {
+      "name": "TEMP_UNIFORMITY_DEVIATION",
+      "condition": "uniformity > 10.0",
+      "message": "Temperature uniformity deviation >10%",
+      "parameter": "temperature",
+      "priority": 3
+    },
+    {
+      "name": "UV_OUT_OF_RANGE",
+      "condition": "abs(pv - sp) > 15",
+      "message": "UV intensity deviation >15 W/m² from setpoint",
+      "parameter": "uv_intensity",
+      "priority": 3
+    },
+    {
+      "name": "UV_UNIFORMITY_DEVIATION",
+      "condition": "uniformity > 12.0",
+      "message": "UV uniformity deviation >12%",
+      "parameter": "uv_intensity",
+      "priority": 3
+    },
+    {
+      "name": "HUMIDITY_DEVIATION",
+      "condition": "abs(pv - sp) > 5.0",
+      "message": "Humidity deviation >5% from setpoint",
+      "parameter": "humidity",
+      "priority": 4
+    },
+    {
+      "name": "HIGH_POWER_CONSUMPTION",
+      "condition": "pv > 30",
+      "message": "High power consumption >30 kW",
+      "parameter": "power_consumption",
+      "priority": 4
+    },
+    {
+      "name": "RAMP_RATE_EXCESSIVE",
+      "condition": "pv > 5.5",
+      "message": "Ramp rate exceeds safe limit >5.5°C/min",
+      "parameter": "ramp_rate_actual",
+      "priority": 3
+    }
+  ],
+  "INFO": [
+    {
+      "name": "SETPOINT_REACHED",
+      "condition": "at_setpoint == True",
+      "message": "Temperature setpoint reached",
+      "priority": 5
+    },
+    {
+      "name": "TEST_COMPLETE",
+      "condition": "test_complete == True",
+      "message": "Test sequence complete",
+      "priority": 5
+    },
+    {
+      "name": "MAINTENANCE_DUE",
+      "condition": "maintenance_due == True",
+      "message": "Scheduled maintenance due",
+      "priority": 5
+    },
+    {
+      "name": "CALIBRATION_REMINDER",
+      "condition": "calibration_due == True",
+      "message": "Sensor calibration reminder - 30 days",
+      "priority": 5
+    }
+  ],
+  "alarm_settings": {
+    "auto_acknowledge_info": false,
+    "email_alerts_critical": true,
+    "email_alerts_warning": false,
+    "sms_alerts_critical": true,
+    "sms_alerts_warning": false,
+    "alarm_sound_enabled": true,
+    "alarm_log_retention_days": 90
+  }
+}
