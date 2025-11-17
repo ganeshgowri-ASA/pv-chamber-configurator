@@ -1,245 +1,234 @@
-# PV Chamber Configurator
+# 🔬 PV Chamber Configurator v1.0.0
 
-Comprehensive UV+TC+HF+DH Combined Environmental Test Chamber Configurator & Quote Generation System for PV Module Testing with CFD Simulations, Virtual HMI, Supplier Database, and Business Analysis.
+**Comprehensive Environmental Test Chamber Design & Quote Generation System**
+*For UV+TC+HF+DH PV Module Testing with CFD Simulations, Virtual HMI & Business Analysis*
 
-## Features
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/streamlit-1.28.0+-red.svg)](https://streamlit.io)
+[![IEC 61215](https://img.shields.io/badge/IEC-61215%2F61730-green.svg)](https://webstore.iec.ch/)
+[![ISO 17025](https://img.shields.io/badge/ISO-17025-green.svg)](https://www.iso.org/)
 
-### Phase 4: Supplier Database Manager + Quote Comparison System ✅
+---
 
-**NEW in this release:**
+## 🎯 Overview
 
-- **Comprehensive Supplier Database**
-  - 24 pre-loaded Indian suppliers for PV chamber components
-  - Supplier ratings, delivery times, payment terms tracking
-  - Contact information and location management
+The **PV Chamber Configurator** is a comprehensive web-based system for designing, quoting, and analyzing environmental test chambers for photovoltaic (PV) module testing. It integrates 10 specialized modules covering engineering calculations, simulations, business analysis, compliance, and quote generation.
 
-- **Automated Quote Parsing**
-  - Multi-format support: PDF, Excel (.xlsx, .xls), CSV
-  - Automated text extraction and price parsing
-  - Support for Indian currency formats (₹, Rs., lakhs, crores)
-  - Quote validation and completeness checking
+### ✨ Key Capabilities
 
-- **Intelligent Price Comparison**
-  - Component-wise price comparison across suppliers
-  - Weighted scoring system (price, lead time, rating, warranty, payment terms)
-  - Visual comparison charts and dashboards
-  - Best value recommendations
+- ⚙️ **Physics-Based Design**: Complete thermodynamic and optical calculations
+- 🌀 **CFD Simulation**: 3D temperature, airflow, and humidity analysis
+- 💰 **Quote Generation**: Professional PDF quotes with white-label branding
+- 📊 **Business Analysis**: ROI, TCO, NPV analysis with Monte Carlo simulation
+- 🤖 **Virtual HMI**: Real-time chamber monitoring and robot control
+- 📜 **Compliance**: IEC 61215/61730 + ISO 17025 calibration management
+- 🌍 **Multi-language**: English + Hindi with full i18n support
+- 📄 **Report Generator**: 5 professional report templates (PDF/Excel)
 
-- **Procurement Recommendation Engine**
-  - Optimal supplier selection algorithm
-  - Total cost calculation with taxes and delivery
-  - Risk assessment (supplier diversification analysis)
-  - Delivery schedule optimization
+---
 
-- **Component Categories:**
-  - Heaters (Watlow, Chromalox, Omega)
-  - Refrigeration (Emerson, Danfoss, Carrier)
-  - Humidifiers (Condair, Carel, Armstrong)
-  - UV LEDs (Seoul Semi, Nichia, Osram)
-  - Fans (ebm-papst, Ziehl-Abegg, Oriental Motor)
-  - Controllers (Eurotherm, Yokogawa, Honeywell)
-  - Insulation (Armacell, Saint-Gobain, Kingspan)
-  - Stainless Steel (Jindal, Tata, JSW)
-
-### Other Features
-
-- Chamber Design & Specification
-- UV System Configuration
-- Quote Generator
-- Business Analysis & TCO
-- Virtual HMI Interface
-
-## Installation
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- Python 3.8+
+- Python 3.8 or higher
 - pip package manager
 
-### Install Dependencies
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/ganeshgowri-ASA/pv-chamber-configurator.git
+cd pv-chamber-configurator
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Run the application
+streamlit run app.py
 ```
 
-### Required Packages
+The app will open in your browser at `http://localhost:8501`
 
-- streamlit >= 1.28.0
-- pandas >= 2.1.0
-- plotly >= 5.17.0
-- openpyxl >= 3.1.0
-- PyPDF2 >= 3.0.0
-- pdfplumber >= 0.10.0
-- sqlalchemy >= 2.0.0
+---
 
-## Quick Start
+## 📦 All 10 Integrated Phases
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ganeshgowri-ASA/pv-chamber-configurator.git
-   cd pv-chamber-configurator
-   ```
+### Phase 1: PV Chamber Core Calculations ✅
+- Chamber dimension configuration (1000-10000mm)
+- Temperature range: -70°C to +180°C, Humidity: 10-98% RH
+- Heat load calculations (cooling/heating)
+- Power consumption estimation
+- Component cost modeling
 
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Phase 2: UV Optical System ✅
+- UV LED layout optimization (uniformity ±5%)
+- 3D irradiance heat map visualization
+- Spectral analysis (UV-A/UV-B)
+- LED aging prediction
 
-3. **Run the application**
-   ```bash
-   streamlit run app.py
-   ```
+### Phase 3: CFD Simulation Engine ✅
+- 3D temperature/airflow/humidity simulation
+- Hot/cold spot detection, dead zone identification
+- Pressure drop calculation
+- Transient response analysis
 
-4. **Access the app**
-   - Open browser at `http://localhost:8501`
-   - Navigate to "Supplier Database" tab
+### Phase 4: Supplier Database & Quotes ✅
+- 24 Indian suppliers pre-loaded
+- Automated quote parsing (PDF/Excel/CSV)
+- Component price tracking and comparison
 
-## Usage
+### Phase 5: Virtual HMI & Robot Control ✅
+- Real-time sensor monitoring
+- Alarm management system
+- Robot controller for UV measurements
+- G-Code path generation
 
-### Supplier Database
+### Phase 6: Quote Generator System ✅
+- Professional PDF generation with branding
+- Email delivery system (SMTP)
+- Customer database (CRM)
+- Payment terms calculator, bulk discounts
 
-1. **View Suppliers**
-   - Navigate to "Supplier Database" → "Suppliers"
-   - Browse 24 pre-loaded Indian suppliers
-   - View ratings, delivery times, and contact info
+### Phase 7: Business Analysis Enhanced ✅
+- 10-year TCO calculation
+- NPV, IRR, payback period
+- Sensitivity analysis (tornado charts)
+- Monte Carlo simulation (1000 iterations)
 
-2. **Upload Quote**
-   - Go to "Upload Quote" subtab
-   - Select supplier from dropdown
-   - Upload PDF/Excel/CSV quote file
-   - Click "Parse Quote" to auto-extract data
-   - Review and save to database
+### Phase 8: Report Generator ✅
+- 5 professional report templates
+- Technical specifications, commercial proposals
+- Business analysis reports, compliance certificates
+- PDF/Excel multi-format export
 
-3. **Compare Prices**
-   - Go to "Price Comparison" subtab
-   - Select component category
-   - View comparison table with weighted scores
-   - See visual charts and best value recommendation
+### Phase 9: Integration, White-label & i18n ✅
+- Complete branding customization
+- Multi-language support (English + Hindi, 225+ strings)
+- IEC configuration templates
+- Custom CSS injection
 
-4. **Get Procurement Recommendations**
-   - Go to "Procurement Recommendation" subtab
-   - Define your component requirements
-   - Click "Generate Recommendation"
-   - View optimal supplier selection, costs, and risk assessment
+### Phase 10: Compliance & Calibration ✅
+- IEC 61215/61730 compliance checking
+- ISO 17025 calibration management
+- Uncertainty calculation (GUM method)
+- Certificate generation with NIST/NPL traceability
 
-### Sample Quote Format (CSV)
+---
 
-```csv
-Description,Quantity,Unit Price,Total
-Finned Tubular Heater 10kW,2,85000,170000
-EC Axial Fan 800mm,4,28000,112000
-UV-A LED Module 100W,28,42000,1176000
+## 💻 Usage
+
+### Basic Workflow
+
+1. **Configure Chamber**: Set dimensions, temperature, humidity, UV intensity
+2. **Run CFD Simulation**: Analyze thermal performance
+3. **Review Business Analysis**: Evaluate ROI and TCO
+4. **Generate Quote**: Create professional quote
+5. **Export Reports**: Generate technical/commercial reports
+6. **Track Compliance**: Verify IEC/ISO compliance
+
+---
+
+## 📊 Technical Specifications
+
+| Parameter | Min | Max | IEC Spec |
+|-----------|-----|-----|----------|
+| Temperature | -70°C | +180°C | ±2°C |
+| Humidity | 10% RH | 98% RH | ±3% |
+| UV Intensity | 25 W/m² | 250 W/m² | ±5% |
+| Chamber Volume | 1 m³ | 100 m³ | - |
+| PV Modules | 1 | 4 | - |
+
+### Dependencies
+
+```
+streamlit>=1.28.0
+pandas>=2.1.0
+plotly>=5.17.0
+numpy>=1.24.0
+scipy>=1.11.0
+matplotlib>=3.7.0
+openpyxl>=3.1.0
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+sqlalchemy>=2.0.0
+reportlab>=4.0.0
+Pillow>=10.0.0
+xlsxwriter>=3.1.0
 ```
 
-## Database Schema
+---
 
-The system uses SQLite with the following tables:
+## 🛠️ Configuration
 
-- **suppliers**: Supplier information, ratings, delivery times
-- **components**: Component catalog with prices, specs, warranties
-- **quotes**: Quote metadata and totals
-- **quote_items**: Individual line items in quotes
-- **price_history**: Historical pricing data for trend analysis
+### White-label Branding
 
-## Testing
+Edit `config/white_label_config.json`:
 
-Run the test suite:
+```json
+{
+  "company": {
+    "name": "Your Company Name",
+    "address": "Your Address",
+    "email": "info@yourcompany.com"
+  },
+  "branding": {
+    "logo_path": "assets/logo.png",
+    "primary_color": "#1f77b4"
+  }
+}
+```
+
+### Email Configuration
+
+Configure SMTP in Streamlit UI or environment variables.
+
+---
+
+## 📖 Documentation
+
+- **[CHANGELOG.md](CHANGELOG.md)**: Version history
+- **[DOCUMENTATION.md](DOCUMENTATION.md)**: Technical architecture
+- **[CONTRIBUTING.md](CONTRIBUTING.md)**: Development guidelines
+- **[IEC_COMPLIANCE_GUIDE.md](docs/IEC_COMPLIANCE_GUIDE.md)**: IEC compliance
+- **[ISO17025_CALIBRATION_MANUAL.md](docs/ISO17025_CALIBRATION_MANUAL.md)**: Calibration procedures
+
+---
+
+## 🧪 Testing
 
 ```bash
-python -m unittest tests/test_supplier_database.py
+# Install pytest
+pip install pytest
+
+# Run all tests
+pytest tests/
 ```
 
-Test coverage includes:
-- Database CRUD operations
-- Quote parsing (PDF/Excel/CSV)
-- Price comparison algorithms
-- Procurement recommendations
-- Currency parsing
-- Risk assessment
+---
 
-## Documentation
+## 🔒 Compliance & Standards
 
-Detailed documentation available in:
-- **SUPPLIER_DATABASE.md** - Complete user guide and API reference
-- Code comments in modules
-- Inline help in the Streamlit interface
+- ✅ **IEC 61215-2:2021** - PV Module Design Qualification
+- ✅ **IEC 61730-2:2016** - PV Module Safety Qualification
+- ✅ **ISO/IEC 17025:2017** - Testing & Calibration Laboratories
+- ✅ **GUM (JCGM 100:2008)** - Measurement Uncertainty
 
-## Project Structure
+---
 
-```
-pv-chamber-configurator/
-├── app.py                          # Main Streamlit application
-├── modules/
-│   ├── __init__.py
-│   ├── supplier_database.py        # Database manager class
-│   ├── quote_parser.py             # Quote parsing utilities
-│   └── init_database.py            # Database initialization
-├── data/
-│   ├── suppliers.db                # SQLite database (auto-created)
-│   ├── indian_suppliers_seed.json  # Pre-loaded supplier data
-│   └── sample_quote.csv            # Sample quote file
-├── tests/
-│   └── test_supplier_database.py   # Test suite
-├── requirements.txt                # Python dependencies
-├── SUPPLIER_DATABASE.md            # Detailed documentation
-└── README.md                       # This file
-```
+## 🤝 Contributing
 
-## API Reference
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines.
 
-### SupplierDatabaseManager
+---
 
-```python
-from modules.supplier_database import SupplierDatabaseManager
+## 📝 License
 
-# Initialize
-db = SupplierDatabaseManager('data/suppliers.db')
+**Proprietary Software** - All rights reserved by Zenitek Solutions.
 
-# Get suppliers
-suppliers = db.get_suppliers()
+---
 
-# Compare prices
-comparison = db.get_best_value_supplier('UV LEDs')
-
-# Get procurement recommendation
-requirements = [
-    {'category': 'Heaters', 'quantity': 2},
-    {'category': 'Fans', 'quantity': 4}
-]
-recommendation = db.generate_procurement_recommendation(requirements)
-```
-
-### Quote Parser
-
-```python
-from modules.quote_parser import auto_detect_and_parse
-
-# Parse quote file
-result = auto_detect_and_parse('quote.pdf')
-
-if result['success']:
-    print(f"Found {len(result['items'])} items")
-    print(f"Total: ₹{result['metadata']['total_cost']:,.2f}")
-```
-
-## Contributing
-
-This is a commercial project for Zenitek Solutions. For feature requests or issues, contact: info@zenitek.com
-
-## Version History
-
-**v1.0.0** (2024-01-15) - Phase 4 Complete
-- Supplier database with 24 Indian suppliers
-- Quote parsing (PDF/Excel/CSV)
-- Price comparison engine
-- Procurement recommendations
-- 32 pre-loaded components across 10 categories
-
-## License
-
-See LICENSE file for details.
-
-## Contact
+## 👥 Contact
 
 **Zenitek Solutions**
 - Location: Tamil Nadu, India
@@ -248,4 +237,4 @@ See LICENSE file for details.
 
 ---
 
-*White-labeled PV Chamber Configurator v1.0*
+**Version**: 1.0.0 | **Release**: 2025-11-17 | *Built with ❤️ using Streamlit*
