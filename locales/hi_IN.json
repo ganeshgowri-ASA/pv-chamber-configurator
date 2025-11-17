@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "language_name": "हिंदी",
+    "language_code": "hi_IN",
+    "direction": "ltr",
+    "contributors": ["PV Chamber Configurator Team"]
+  },
+  "app_title": "पीवी चैम्बर कॉन्फ़िगरेटर",
+  "app_subtitle": "व्यापक पर्यावरण परीक्षण कक्ष कॉन्फ़िगरेटर और उद्धरण जनरेशन प्रणाली",
+  "app_description": "CFD सिमुलेशन, वर्चुअल HMI और व्यवसाय विश्लेषण के साथ पीवी मॉड्यूल परीक्षण के लिए",
+
+  "sidebar": {
+    "title": "नेविगेशन",
+    "white_label_settings": "व्हाइट-लेबल सेटिंग्स",
+    "language": "भाषा",
+    "core_calculations": "मुख्य गणना",
+    "uv_system": "यूवी ऑप्टिकल सिस्टम",
+    "cfd_simulation": "CFD सिमुलेशन",
+    "supplier_database": "आपूर्तिकर्ता डेटाबेस",
+    "virtual_hmi": "वर्चुअल HMI",
+    "quote_generator": "उद्धरण जेनरेटर",
+    "business_analysis": "व्यवसाय विश्लेषण",
+    "reports": "रिपोर्ट",
+    "compliance": "अनुपालन जांचकर्ता",
+    "quick_stats": "त्वरित आंकड़े",
+    "total_cost": "कुल लागत",
+    "delivery": "डिलीवरी",
+    "warranty": "वारंटी",
+    "config_management": "कॉन्फ़िगरेशन प्रबंधन",
+    "save_config": "कॉन्फ़िगरेशन सहेजें",
+    "load_config": "कॉन्फ़िगरेशन लोड करें"
+  },
+
+  "tabs": {
+    "chamber_design": "चैम्बर डिज़ाइन",
+    "uv_system": "यूवी सिस्टम",
+    "quote_generator": "उद्धरण जेनरेटर",
+    "business_analysis": "व्यवसाय विश्लेषण",
+    "virtual_hmi": "वर्चुअल HMI",
+    "white_label": "व्हाइट-लेबल सेटिंग्स",
+    "config_templates": "कॉन्फ़िगरेशन टेम्पलेट"
+  },
+
+  "buttons": {
+    "calculate": "गणना करें",
+    "generate": "जेनरेट करें",
+    "export": "निर्यात करें",
+    "save": "सहेजें",
+    "load": "लोड करें",
+    "reset": "रीसेट करें",
+    "apply": "लागू करें",
+    "cancel": "रद्द करें",
+    "upload": "अपलोड करें",
+    "download": "डाउनलोड करें",
+    "preview": "पूर्वावलोकन",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "create": "बनाएं",
+    "update": "अपडेट करें"
+  },
+
+  "labels": {
+    "chamber_specs": "चैम्बर विनिर्देश",
+    "dimensions": "आयाम",
+    "length": "लंबाई (मिमी)",
+    "width": "चौड़ाई (मिमी)",
+    "height": "ऊंचाई (मिमी)",
+    "internal_volume": "आंतरिक आयतन",
+    "performance": "प्रदर्शन",
+    "temperature_range": "तापमान सीमा (°C)",
+    "humidity_range": "आर्द्रता सीमा (%RH)",
+    "uv_intensity": "यूवी तीव्रता (W/m²)",
+    "led_type": "एलईडी प्रकार",
+    "num_modules": "पीवी मॉड्यूल की संख्या",
+    "required_leds": "आवश्यक एलईडी",
+    "total_uv_power": "कुल यूवी शक्ति",
+    "uniformity": "एकरूपता",
+    "company_name": "कंपनी का नाम",
+    "address": "पता",
+    "email": "ईमेल",
+    "phone": "फोन",
+    "website": "वेबसाइट",
+    "logo": "लोगो",
+    "primary_color": "प्राथमिक ब्रांड रंग",
+    "secondary_color": "द्वितीयक ब्रांड रंग",
+    "font_family": "फ़ॉन्ट परिवार",
+    "configuration_name": "कॉन्फ़िगरेशन नाम",
+    "description": "विवरण",
+    "template_name": "टेम्पलेट नाम"
+  },
+
+  "placeholders": {
+    "company_name": "कंपनी का नाम दर्ज करें",
+    "address": "पूरा पता दर्ज करें",
+    "email": "contact@company.com",
+    "phone": "+91-XXX-XXX-XXXX",
+    "website": "https://company.com",
+    "config_name": "मेरा कॉन्फ़िगरेशन",
+    "description": "विवरण दर्ज करें"
+  },
+
+  "headings": {
+    "chamber_design": "चैम्बर डिज़ाइन विनिर्देश",
+    "uv_optical_system": "यूवी ऑप्टिकल सिस्टम",
+    "cost_breakdown": "लागत विवरण",
+    "commercial_quote": "वाणिज्यिक उद्धरण जेनरेटर",
+    "business_metrics": "व्यवसाय विश्लेषण",
+    "virtual_hmi_monitoring": "वर्चुअल HMI - रीयल-टाइम मॉनिटरिंग",
+    "white_label_config": "व्हाइट-लेबल कॉन्फ़िगरेशन",
+    "company_branding": "कंपनी ब्रांडिंग",
+    "logo_upload": "लोगो अपलोड",
+    "brand_colors": "ब्रांड रंग",
+    "configuration_templates": "कॉन्फ़िगरेशन टेम्पलेट",
+    "save_configuration": "कॉन्फ़िगरेशन सहेजें",
+    "load_configuration": "कॉन्फ़िगरेशन लोड करें"
+  },
+
+  "messages": {
+    "success": {
+      "config_saved": "कॉन्फ़िगरेशन सफलतापूर्वक सहेजा गया",
+      "config_loaded": "कॉन्फ़िगरेशन सफलतापूर्वक लोड किया गया",
+      "template_created": "टेम्पलेट सफलतापूर्वक बनाया गया",
+      "logo_uploaded": "लोगो सफलतापूर्वक अपलोड किया गया",
+      "branding_applied": "ब्रांडिंग सफलतापूर्वक लागू की गई",
+      "settings_updated": "सेटिंग्स सफलतापूर्वक अपडेट की गईं"
+    },
+    "error": {
+      "config_save_failed": "कॉन्फ़िगरेशन सहेजने में विफल",
+      "config_load_failed": "कॉन्फ़िगरेशन लोड करने में विफल",
+      "invalid_file": "अमान्य फ़ाइल प्रारूप",
+      "upload_failed": "अपलोड विफल",
+      "validation_failed": "सत्यापन विफल"
+    },
+    "warning": {
+      "unsaved_changes": "आपके पास असहेजे परिवर्तन हैं",
+      "large_file": "फ़ाइल का आकार बड़ा है, प्रोसेस होने में समय लग सकता है",
+      "missing_data": "कुछ आवश्यक डेटा गायब है"
+    },
+    "info": {
+      "iec_compliant": "IEC 61215/61730 अनुरूप",
+      "system_running": "सिस्टम स्थिति: चल रहा है",
+      "calibrated": "सभी सेंसर कैलिब्रेटेड",
+      "no_templates": "कोई टेम्पलेट उपलब्ध नहीं",
+      "select_file": "कृपया एक फ़ाइल चुनें"
+    }
+  },
+
+  "tooltips": {
+    "temp_uniformity": "तापमान एकरूपता चैम्बर वॉल्यूम में भिन्नता को मापती है। लक्ष्य: ±2°C",
+    "humidity_uniformity": "आर्द्रता एकरूपता RH भिन्नता को मापती है। लक्ष्य: ±3%RH",
+    "uv_intensity_info": "यूवी तीव्रता मॉड्यूल सतह पर मापी जाती है। IEC 61215 को 60 W/m² ±15% की आवश्यकता है",
+    "chamber_volume": "परीक्षण कक्ष का कुल आंतरिक आयतन घन मीटर में",
+    "led_efficiency": "एलईडी दक्षता बिजली की खपत और ताप उत्पन्न को प्रभावित करती है",
+    "tco_components": "स्वामित्व की कुल लागत में पूंजी, परिचालन और रखरखाव लागत शामिल है",
+    "payment_terms": "मानक भुगतान शर्तें: 40% अग्रिम, 40% प्रेषण से पहले, 20% स्थापना के बाद",
+    "delivery_time": "विशिष्ट डिलीवरी समय में निर्माण और स्थापना शामिल है",
+    "warranty_period": "सभी घटकों और श्रम को कवर करने वाली व्यापक वारंटी",
+    "logo_requirements": "PNG/JPG/SVG अपलोड करें। अधिकतम आकार: 2MB। अधिकतम आयाम: 1000x500px",
+    "primary_color_info": "प्राथमिक रंग बटन, हेडर और मुख्य UI तत्वों के लिए उपयोग किया जाता है",
+    "secondary_color_info": "द्वितीयक रंग लिंक, एक्सेंट और द्वितीयक UI तत्वों के लिए उपयोग किया जाता है",
+    "config_save_info": "बाद में उपयोग या साझा करने के लिए पूर्ण सिस्टम कॉन्फ़िगरेशन सहेजें",
+    "template_info": "टेम्पलेट सामान्य परीक्षण परिदृश्यों के लिए पूर्व-कॉन्फ़िगर की गई सेटिंग्स हैं"
+  },
+
+  "cost_components": {
+    "chamber_system": "चैम्बर सिस्टम",
+    "uv_led_arrays": "यूवी एलईडी ऐरे",
+    "refrigeration": "प्रशीतन",
+    "controls_hmi": "नियंत्रण/HMI",
+    "dc_power_supply": "डीसी पावर सप्लाई",
+    "uniformity_robot": "एकरूपता रोबोट",
+    "water_treatment": "जल उपचार",
+    "installation": "स्थापना",
+    "calibration": "अंशांकन"
+  },
+
+  "metrics": {
+    "ten_year_tco": "10-वर्षीय TCO",
+    "roi_period": "ROI अवधि",
+    "annual_revenue": "वार्षिक राजस्व",
+    "co2_emissions": "CO₂ उत्सर्जन",
+    "energy_cost": "ऊर्जा लागत",
+    "mtbf": "MTBF",
+    "temperature": "तापमान",
+    "humidity": "आर्द्रता",
+    "runtime": "रनटाइम"
+  },
+
+  "units": {
+    "mm": "मिमी",
+    "m3": "m³",
+    "celsius": "°C",
+    "rh": "%RH",
+    "w_m2": "W/m²",
+    "kw": "kW",
+    "units": "इकाइयां",
+    "percent": "%",
+    "lakhs": "₹L",
+    "crores": "₹Cr",
+    "years": "वर्ष",
+    "weeks": "सप्ताह",
+    "months": "महीने",
+    "hours": "घंटे",
+    "tonnes_yr": "टन/वर्ष"
+  },
+
+  "validation": {
+    "required_field": "यह फ़ील्ड आवश्यक है",
+    "invalid_email": "अमान्य ईमेल प्रारूप",
+    "invalid_phone": "अमान्य फ़ोन नंबर",
+    "invalid_url": "अमान्य URL प्रारूप",
+    "value_too_small": "मान बहुत छोटा है",
+    "value_too_large": "मान बहुत बड़ा है",
+    "invalid_range": "अमान्य सीमा",
+    "file_too_large": "फ़ाइल का आकार अधिकतम अनुमत से अधिक है",
+    "invalid_dimensions": "छवि के आयाम अधिकतम अनुमत से अधिक हैं",
+    "unsupported_format": "असमर्थित फ़ाइल प्रारूप"
+  },
+
+  "footer": {
+    "generated_on": "उत्पन्न किया गया",
+    "powered_by": "द्वारा संचालित",
+    "version": "व्हाइट-लेबल पीवी चैम्बर कॉन्फ़िगरेटर v1.0"
+  }
+}

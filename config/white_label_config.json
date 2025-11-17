@@ -1,0 +1,17 @@
+{
+  "company": {
+    "name": "Your Company Name",
+    "address": "123 Street, City, State, PIN",
+    "email": "contact@company.com",
+    "phone": "+91-XXX-XXX-XXXX",
+    "website": "https://company.com"
+  },
+  "branding": {
+    "logo_path": null,
+    "primary_color": "#1E40AF",
+    "secondary_color": "#3B82F6",
+    "font_family": "Helvetica"
+  },
+  "locale": "en_US",
+  "last_updated": "2025-01-20T10:00:00Z"
+}
