@@ -1,7 +1,27 @@
 """
 PV Chamber Configurator - Modules Package
 
-Comprehensive modules for UV optical system design, CFD simulation, and analysis.
+Comprehensive modules for UV optical system design, CFD simulation, supplier database, and analysis.
 """
 
-__version__ = "3.0.0"
+from .supplier_database import SupplierDatabaseManager
+from .quote_parser import (
+    parse_pdf_quote,
+    parse_excel_quote,
+    parse_csv_quote,
+    auto_detect_and_parse,
+    parse_indian_currency,
+    extract_component_prices
+)
+
+__all__ = [
+    'SupplierDatabaseManager',
+    'parse_pdf_quote',
+    'parse_excel_quote',
+    'parse_csv_quote',
+    'auto_detect_and_parse',
+    'parse_indian_currency',
+    'extract_component_prices'
+]
+
+__version__ = "4.0.0"

@@ -61,6 +61,11 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
+# Supplier Database
+# Ignore database files (auto-generated from seed data)
+data/*.db
+data/temp_quotes/
+
 # Flask stuff:
 instance/
 .webassets-cache
