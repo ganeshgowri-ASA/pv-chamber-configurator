@@ -210,3 +210,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# PV Chamber Configurator - Generated Reports
+generated_reports/
+tests/output/

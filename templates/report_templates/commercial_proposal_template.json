@@ -1,0 +1,73 @@
+{
+  "name": "Commercial Proposal Template",
+  "report_type": "commercial_proposal",
+  "version": "1.0",
+  "description": "Commercial proposal and quotation report",
+  "branding": {
+    "company_name": "Zenitek Solutions",
+    "logo_path": "assets/logo.png",
+    "primary_color": "#2c5aa0",
+    "secondary_color": "#1f4788"
+  },
+  "layout": {
+    "page_size": "A4",
+    "orientation": "portrait",
+    "margins": {
+      "top": 20,
+      "bottom": 20,
+      "left": 15,
+      "right": 15
+    }
+  },
+  "typography": {
+    "font_family": "Helvetica",
+    "font_sizes": {
+      "title": 24,
+      "header": 16,
+      "subheader": 14,
+      "body": 11
+    }
+  },
+  "sections": [
+    {
+      "name": "Executive Summary",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "name": "Technical Specifications",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "name": "Quote and Pricing",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "name": "ROI Analysis",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "name": "Supplier Comparison",
+      "enabled": false,
+      "order": 5
+    },
+    {
+      "name": "Payment Terms",
+      "enabled": true,
+      "order": 6
+    },
+    {
+      "name": "Delivery Timeline",
+      "enabled": true,
+      "order": 7
+    }
+  ],
+  "watermark": {
+    "enabled": false,
+    "text": "CONFIDENTIAL",
+    "opacity": 0.1
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Test Execution Template",
+  "report_type": "test_execution",
+  "version": "1.0",
+  "description": "Test execution and validation report",
+  "branding": {
+    "company_name": "Zenitek Solutions",
+    "logo_path": "assets/logo.png",
+    "primary_color": "#2c5aa0",
+    "secondary_color": "#1f4788"
+  },
+  "layout": {
+    "page_size": "A4",
+    "orientation": "portrait",
+    "margins": {
+      "top": 20,
+      "bottom": 20,
+      "left": 15,
+      "right": 15
+    }
+  },
+  "typography": {
+    "font_family": "Helvetica",
+    "font_sizes": {
+      "title": 24,
+      "header": 16,
+      "subheader": 14,
+      "body": 11
+    }
+  },
+  "sections": [
+    {
+      "name": "Test Parameters",
+      "enabled": true,
+      "order": 1
+    },
+    {
+      "name": "Data Logs",
+      "enabled": true,
+      "order": 2
+    },
+    {
+      "name": "Uniformity Measurements",
+      "enabled": true,
+      "order": 3
+    },
+    {
+      "name": "Alarm History",
+      "enabled": true,
+      "order": 4
+    },
+    {
+      "name": "Operator Notes",
+      "enabled": true,
+      "order": 5
+    },
+    {
+      "name": "Pass/Fail Status",
+      "enabled": true,
+      "order": 6
+    }
+  ],
+  "watermark": {
+    "enabled": false
+  }
+}
