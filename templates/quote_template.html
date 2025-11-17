@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote for PV Environmental Test Chamber</title>
+    <style>
+        body {{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }}
+        .email-container {{
+            max-width: 650px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+        .header {{
+            background: linear-gradient(135deg, #1f77b4 0%, #2596be 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }}
+        .header h1 {{
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }}
+        .header p {{
+            margin: 10px 0 0 0;
+            font-size: 16px;
+            opacity: 0.95;
+        }}
+        .content {{
+            padding: 40px 30px;
+        }}
+        .greeting {{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }}
+        .quote-details {{
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 5px solid #1f77b4;
+            border-radius: 5px;
+        }}
+        .quote-details h3 {{
+            margin: 0 0 15px 0;
+            color: #1f77b4;
+            font-size: 20px;
+        }}
+        .quote-details ul {{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }}
+        .quote-details li {{
+            padding: 8px 0;
+            border-bottom: 1px solid #dee2e6;
+        }}
+        .quote-details li:last-child {{
+            border-bottom: none;
+        }}
+        .quote-details strong {{
+            color: #495057;
+            display: inline-block;
+            min-width: 150px;
+        }}
+        .features {{
+            background-color: #fff;
+            padding: 0;
+            margin: 25px 0;
+        }}
+        .features h3 {{
+            color: #1f77b4;
+            margin-bottom: 15px;
+        }}
+        .features ul {{
+            padding-left: 20px;
+        }}
+        .features li {{
+            padding: 5px 0;
+            color: #495057;
+        }}
+        .features li::marker {{
+            color: #1f77b4;
+        }}
+        .custom-message {{
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }}
+        .custom-message p {{
+            margin: 0;
+            color: #856404;
+        }}
+        .cta-button {{
+            text-align: center;
+            margin: 30px 0;
+        }}
+        .cta-button a {{
+            background-color: #1f77b4;
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }}
+        .cta-button a:hover {{
+            background-color: #145a8a;
+        }}
+        .footer {{
+            background-color: #343a40;
+            color: #adb5bd;
+            padding: 30px;
+            text-align: center;
+            font-size: 13px;
+        }}
+        .footer p {{
+            margin: 5px 0;
+        }}
+        .footer a {{
+            color: #1f77b4;
+            text-decoration: none;
+        }}
+        .divider {{
+            height: 1px;
+            background-color: #dee2e6;
+            margin: 25px 0;
+        }}
+        .highlight {{
+            color: #1f77b4;
+            font-weight: 600;
+        }}
+        @media only screen and (max-width: 600px) {{
+            .email-container {{
+                margin: 0;
+                border-radius: 0;
+            }}
+            .header {{
+                padding: 30px 20px;
+            }}
+            .content {{
+                padding: 25px 20px;
+            }}
+            .quote-details {{
+                padding: 20px;
+            }}
+        }}
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Quotation for PV Environmental Test Chamber</h1>
+            <p>Professional Testing Solutions for Photovoltaic Modules</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Greeting -->
+            <div class="greeting">
+                <p>Dear <strong>{customer_name}</strong>,</p>
+                <p>Thank you for your interest in our PV Environmental Test Chambers. We are pleased to present our detailed quotation for your review.</p>
+            </div>
+
+            <!-- Custom Message (if provided) -->
+            {custom_message}
+
+            <!-- Quote Details -->
+            <div class="quote-details">
+                <h3>Quote Summary</h3>
+                <ul>
+                    <li><strong>Quote Number:</strong> <span class="highlight">{quote_number}</span></li>
+                    <li><strong>Total Amount:</strong> <span class="highlight">{total}</span></li>
+                    <li><strong>Valid For:</strong> {validity_days} days from date of issue</li>
+                    <li><strong>Estimated Delivery:</strong> {delivery_weeks} weeks from order confirmation</li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Features -->
+            <div class="features">
+                <h3>Why Choose Our PV Test Chambers?</h3>
+                <ul>
+                    <li><strong>IEC Compliance:</strong> Meets IEC 61215 and IEC 61730 standards</li>
+                    <li><strong>Advanced UV System:</strong> High-efficiency LED technology with ±8% uniformity</li>
+                    <li><strong>Wide Temperature Range:</strong> -45°C to +105°C for comprehensive testing</li>
+                    <li><strong>Humidity & Freeze:</strong> 40-95% RH with dew point control</li>
+                    <li><strong>Smart Controls:</strong> Advanced HMI with real-time monitoring and data logging</li>
+                    <li><strong>Energy Efficient:</strong> Optimized refrigeration and insulation systems</li>
+                    <li><strong>Comprehensive Support:</strong> Installation, calibration, training, and warranty</li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- What's Included -->
+            <p><strong>The attached PDF quotation includes:</strong></p>
+            <ul style="padding-left: 20px; color: #495057;">
+                <li>Detailed specifications and component breakdown</li>
+                <li>Itemized pricing with transparent cost structure</li>
+                <li>Payment terms and delivery schedule</li>
+                <li>Warranty coverage and support details</li>
+                <li>Terms and conditions</li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <!-- Next Steps -->
+            <p><strong>Next Steps:</strong></p>
+            <p>Please review the attached quotation carefully. Should you have any questions or require clarification on any aspect of the proposal, our technical team is ready to assist you.</p>
+
+            <p>We can also arrange:</p>
+            <ul style="padding-left: 20px; color: #495057;">
+                <li>Virtual product demonstration</li>
+                <li>Technical consultation call</li>
+                <li>Site visit to discuss installation requirements</li>
+                <li>Customization options for specific test protocols</li>
+            </ul>
+
+            <!-- CTA Button -->
+            <div class="cta-button">
+                <a href="mailto:sales@zenitek.com?subject=Re: {quote_number}">Contact Us</a>
+            </div>
+
+            <!-- Closing -->
+            <p>We look forward to the opportunity to support your PV module testing requirements and establish a long-term partnership.</p>
+
+            <p style="margin-top: 30px;">
+                <strong>Best regards,</strong><br>
+                Sales Team<br>
+                <span class="highlight">Zenitek Solutions</span><br>
+                Environmental Test Chamber Specialists
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Zenitek Solutions</strong></p>
+            <p>Tamil Nadu, India</p>
+            <p>Email: <a href="mailto:info@zenitek.com">info@zenitek.com</a> | Phone: +91-XXX-XXX-XXXX</p>
+            <p style="margin-top: 15px; font-size: 11px; opacity: 0.8;">
+                This email was sent regarding your inquiry for PV Environmental Test Chambers.<br>
+                If you have any questions, please reply to this email or contact our sales team.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

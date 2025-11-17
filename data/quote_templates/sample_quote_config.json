@@ -1,0 +1,106 @@
+{
+  "default_items": [
+    {
+      "category": "Chamber System",
+      "description": "PV Test Chamber 3200x2100x2200mm",
+      "specification": "UV+TC+HF+DH, -45°C to +105°C, 40-95% RH",
+      "quantity": 1,
+      "unit_price": 3500000.00
+    },
+    {
+      "category": "UV System",
+      "description": "UV LED Array System",
+      "specification": "60 W/m² intensity, ±8% uniformity, 28 LED modules",
+      "quantity": 1,
+      "unit_price": 1600000.00
+    },
+    {
+      "category": "Refrigeration",
+      "description": "Two-Stage Cascade Refrigeration System",
+      "specification": "-45°C to +105°C, eco-friendly refrigerant",
+      "quantity": 1,
+      "unit_price": 800000.00
+    },
+    {
+      "category": "Control System",
+      "description": "Advanced PLC & HMI System",
+      "specification": "10-inch touchscreen, data logging, remote monitoring",
+      "quantity": 1,
+      "unit_price": 700000.00
+    },
+    {
+      "category": "Power Supply",
+      "description": "DC Power Supply for PV Modules",
+      "specification": "0-1500V, 0-20A, high accuracy",
+      "quantity": 1,
+      "unit_price": 600000.00
+    },
+    {
+      "category": "Calibration",
+      "description": "NABL Calibration & Certification",
+      "specification": "Temperature, humidity, UV sensors calibrated",
+      "quantity": 1,
+      "unit_price": 350000.00
+    }
+  ],
+  "optional_items": [
+    {
+      "category": "Robotics",
+      "description": "UV Uniformity Measurement Robot",
+      "specification": "Automated 3-axis scanner with data logging",
+      "quantity": 1,
+      "unit_price": 1200000.00
+    },
+    {
+      "category": "Water Treatment",
+      "description": "RO Water Treatment System",
+      "specification": "For humidity generation, 100 L/day capacity",
+      "quantity": 1,
+      "unit_price": 630000.00
+    },
+    {
+      "category": "Installation",
+      "description": "Installation & Commissioning",
+      "specification": "Complete setup, testing, training",
+      "quantity": 1,
+      "unit_price": 500000.00
+    },
+    {
+      "category": "Warranty",
+      "description": "Extended Warranty (3 years)",
+      "specification": "Parts and labor, priority support",
+      "quantity": 1,
+      "unit_price": 450000.00
+    }
+  ],
+  "discount_tiers": [
+    {
+      "min_quantity": 1,
+      "max_quantity": 1,
+      "discount_percent": 0
+    },
+    {
+      "min_quantity": 2,
+      "max_quantity": 3,
+      "discount_percent": 5
+    },
+    {
+      "min_quantity": 4,
+      "max_quantity": 5,
+      "discount_percent": 8
+    },
+    {
+      "min_quantity": 6,
+      "max_quantity": 999,
+      "discount_percent": 10
+    }
+  ],
+  "default_settings": {
+    "tax_rate": 18.0,
+    "shipping_cost": 50000.0,
+    "currency": "INR",
+    "payment_terms": "50% advance, 50% on delivery",
+    "delivery_weeks": 14,
+    "validity_days": 30
+  }
+}
