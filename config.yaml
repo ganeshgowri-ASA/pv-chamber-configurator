@@ -1,0 +1,53 @@
+# White-Label Branding Configuration
+# This file is auto-generated and should not be edited manually
+# Use the Branding Configuration UI in the app to modify
+
+company:
+  name: "PV Testing Solutions"
+  tagline: "Professional Photovoltaic Test Equipment"
+  address: "India"
+  phone: "+91-XXXXXXXXXX"
+  email: "info@pvtesting.com"
+  website: "https://www.pvtesting.com"
+
+branding:
+  primary_color: "#1E88E5"  # Blue
+  secondary_color: "#FFA726"  # Orange
+  accent_color: "#43A047"  # Green
+  logo_path: null  # Path to uploaded logo
+  show_powered_by: true  # Show "Powered by PV Configurator"
+
+defaults:
+  currency: "INR"
+  currency_symbol: "₹"
+  units:
+    length: "m"  # meters
+    temperature: "°C"  # Celsius
+    power: "kW"  # kilowatts
+    volume: "m³/h"  # cubic meters per hour
+
+technical:
+  standards:
+    - "IEC 61215-2:2021"  # Terrestrial PV modules - Design qualification
+    - "IEC 61730-2:2016"  # PV module safety qualification
+    - "IEC 60068-2-38"  # Environmental testing - Combined temperature/humidity
+    - "IEC 60068-2-14"  # Environmental testing - Change of temperature
+
+  default_chamber:
+    length: 3.2  # meters
+    width: 2.1  # meters
+    height: 2.2  # meters
+
+  default_module:
+    length: 2.2  # meters
+    width: 1.3  # meters
+    thickness: 0.04  # meters
+    mass: 62  # kg
+    max_power: 650  # watts
+
+reports:
+  include_calculations: true
+  include_supplier_comparison: true
+  include_technical_specs: true
+  watermark: true
+  footer_text: "Confidential - For Professional Use Only"
